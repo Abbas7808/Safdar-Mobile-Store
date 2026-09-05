@@ -1,0 +1,29 @@
+[
+    {
+        "id": "sup-1",
+        "name": "Samsung Official Pakistan Distributor",
+        "company": "M&P Pakistan",
+        "phone": "021-111-000-786",
+        "email": "distribution@mp.com.pk",
+        "address": "Karachi, Pakistan",
+        "status": "active"
+    },
+    {
+        "id": "sup-2",
+        "name": "Hikvision Security Solutions Ltd",
+        "company": "Hikvision Pak",
+        "phone": "042-35712345",
+        "email": "info@hikvision.com.pk",
+        "address": "Lahore, Pakistan",
+        "status": "active"
+    },
+    {
+        "id": "sup-3",
+        "name": "New japan electronic",
+        "company": "New Japan Electronic CCTV & Security Distribution",
+        "phone": "0333-9988776",
+        "email": "newjapan@cctvpakistan.com",
+        "address": "Shop #4, Electronic Plaza, Kohat \/ Hangu Road",
+        "status": "active"
+    }
+]

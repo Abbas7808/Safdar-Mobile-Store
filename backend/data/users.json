@@ -1,0 +1,30 @@
+[
+    {
+        "id": "user-001",
+        "username": "admin@admin.com",
+        "password": "$2y$12$YwTIi3xES3lcT663BOkIOOPudwEiPIKiqSqS6FiLlLeFh7pPEcRci",
+        "name": "Super Admin",
+        "role": "super_admin",
+        "email": "admin@admin.com",
+        "phone": "03339688007",
+        "status": "active",
+        "totp_secret": "5VI2RSZC7APQHORB",
+        "totp_enabled": false,
+        "force_password_change": false,
+        "createdAt": "2026-08-10 08:00:55"
+    },
+    {
+        "id": "user-002",
+        "username": "Salesman@Salesman.com",
+        "password": "$2y$12$46NSSH1wRhBGsstQxbRnCuHE\/omUWhMWHzZhnGdHL6nwLuqbUvgZK",
+        "name": "Salesman \/ POS Operator",
+        "role": "salesman",
+        "email": "salesman@salesman.com",
+        "phone": "03339688007",
+        "status": "active",
+        "totp_secret": "",
+        "totp_enabled": false,
+        "force_password_change": false,
+        "createdAt": "2026-08-10 08:35:00"
+    }
+]

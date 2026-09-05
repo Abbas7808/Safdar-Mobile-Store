@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /index.php
+Allow: /assets/
+
+# Block Admin Panel & Sensitive Directories from Search Engine Indexing
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /secure-portal.php
+
+Sitemap: https://safdarmobilestore.com/sitemap.xml

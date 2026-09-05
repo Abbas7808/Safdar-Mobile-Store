@@ -1,0 +1,111 @@
+[
+    {
+        "id": "cctv-1787993502-787",
+        "projectNo": "CCTV-20260829-002",
+        "clientName": "khyalmat Khan",
+        "clientPhone": "03039562334",
+        "clientCnic": "",
+        "siteType": "hospital",
+        "siteAddress": "Hangu",
+        "systemPackage": "Dahua 4-Channel 5MP Super HD Night Vision Setup",
+        "cameraBrand": "Dahua",
+        "cameraMegapixel": "5MP Super HD",
+        "cameraCount": 4,
+        "dvrChannels": 4,
+        "dvrModel": "Dahua 4-Channel WizSense XVR",
+        "dvrQty": 1,
+        "storageHdd": "1TB Surveillance HDD",
+        "storageDrives": [
+            {
+                "type": "1TB Surveillance HDD",
+                "qty": 1
+            }
+        ],
+        "powerSupply": "12V 5A Central Supply",
+        "powerSupplyAmp": "12V 5A Central Supply",
+        "powerSupplyQty": 1,
+        "cablesFootage": "150m RG59",
+        "accessories": "BNC & DC Jacks",
+        "customItems": [],
+        "equipmentCost": 0,
+        "laborFee": 5000,
+        "totalBill": 5000,
+        "advancePaid": 15000,
+        "remainingPayment": 0,
+        "creditAmount": 0,
+        "paymentMethod": "Cash",
+        "creditNote": "",
+        "creditDueDate": "",
+        "status": "installed",
+        "technician": "bilawal",
+        "installedDate": "2026-08-29",
+        "warrantyExpiry": "",
+        "notes": "",
+        "createdAt": "2026-08-29T10:51:42+02:00"
+    },
+    {
+        "id": "cctv-1787991258-643",
+        "projectNo": "CCTV-20260829-001",
+        "clientName": "Munim Abbas",
+        "clientPhone": "03344739339",
+        "clientCnic": "",
+        "siteType": "hospital",
+        "siteAddress": "Hangu",
+        "systemPackage": "Hikvision 2-Channel 3MP HD Night Vision Setup",
+        "cameraBrand": "Hikvision",
+        "cameraMegapixel": "3MP HD",
+        "cameraCount": 2,
+        "dvrChannels": 4,
+        "dvrModel": "Hikvision 4-Channel Turbo HD DVR",
+        "dvrQty": 1,
+        "storageHdd": "500GB HDD, 1TB NVMe \/ SATA SSD",
+        "storageDrives": [
+            {
+                "type": "500GB HDD",
+                "qty": 1
+            },
+            {
+                "type": "1TB NVMe \/ SATA SSD",
+                "qty": 1
+            }
+        ],
+        "powerSupply": "12V 30A Industrial Supply",
+        "powerSupplyAmp": "12V 30A Industrial Supply",
+        "powerSupplyQty": 2,
+        "cablesFootage": "150m RG59",
+        "accessories": "BNC & DC Jacks",
+        "customItems": [
+            {
+                "subCategory": "Junction Boxes & Waterproofing",
+                "name": "juntion  box",
+                "qty": 2,
+                "unit": "Pcs",
+                "price": 6000,
+                "amount": 12000
+            },
+            {
+                "subCategory": "PoE Switches & Networking",
+                "name": "hshdgs",
+                "qty": 5,
+                "unit": "Pcs",
+                "price": 5000,
+                "amount": 25000
+            }
+        ],
+        "equipmentCost": 37000,
+        "laborFee": 15000,
+        "totalBill": 52000,
+        "advancePaid": 2000,
+        "remainingPayment": 50000,
+        "creditAmount": 50000,
+        "paymentMethod": "Partial Credit",
+        "creditNote": "safdar",
+        "creditDueDate": "2026-08-31",
+        "status": "installed",
+        "technician": "bilawal",
+        "installedDate": "2026-08-29",
+        "warrantyExpiry": "",
+        "notes": "",
+        "createdAt": "2026-08-29T10:14:18+02:00"
+    }
+]

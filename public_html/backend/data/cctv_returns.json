@@ -1,0 +1,19 @@
+[
+    {
+        "id": "cctv-ret-1787326512-374",
+        "projectId": "cctv-1",
+        "projectNo": "CCTV-20260815-001",
+        "clientName": "Haji Gulzar Khan",
+        "clientPhone": "0333 9123456",
+        "siteAddress": "Al-Madina Shopping Plaza, Main Bazar Hangu",
+        "cameraBrand": "Hikvision",
+        "systemPackage": "8-Channel 5MP HD Commercial CCTV System",
+        "originalTotalBill": 60000,
+        "originalAdvancePaid": 40000,
+        "refundAmount": 40000,
+        "reason": "otherr",
+        "equipmentReturned": true,
+        "returnedBy": "admin@admin.com",
+        "returnedAt": "2026-08-21T17:35:12+02:00"
+    }
+]

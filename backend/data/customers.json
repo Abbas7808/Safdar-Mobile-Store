@@ -1,0 +1,52 @@
+[
+    {
+        "id": "cust-1",
+        "name": "Walk-in Customer",
+        "phone": "00000000000",
+        "email": "",
+        "totalPurchases": 0,
+        "totalSpent": "0.00",
+        "balance": "0.00",
+        "status": "active"
+    },
+    {
+        "id": "cust-1786344027",
+        "name": "Munim Abbas",
+        "phone": "",
+        "email": "",
+        "totalPurchases": 1,
+        "totalSpent": "148500.00",
+        "balance": "0.00",
+        "status": "active"
+    },
+    {
+        "id": "cust-1786344719",
+        "name": "Safdar Hussain",
+        "phone": "",
+        "email": "",
+        "totalPurchases": 1,
+        "totalSpent": "3800.00",
+        "balance": "0.00",
+        "status": "active"
+    },
+    {
+        "id": "cust-1786346768",
+        "name": "Ali Abbas",
+        "phone": "",
+        "email": "",
+        "totalPurchases": 1,
+        "totalSpent": "7800.00",
+        "balance": "0.00",
+        "status": "active"
+    },
+    {
+        "id": "cust-2",
+        "name": "Ahmad Khan",
+        "phone": "03001234567",
+        "email": "ahmad@example.com",
+        "totalPurchases": 2,
+        "totalSpent": "455000.00",
+        "balance": "18500.00",
+        "status": "active"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "exp-1",
+        "category": "Shop Rent",
+        "amount": "35000.00",
+        "date": "2026-08-01",
+        "notes": "Commercial Shop Monthly Rent",
+        "createdAt": "2026-08-10 12:02:03"
+    },
+    {
+        "id": "exp-2",
+        "category": "Electricity Bill",
+        "amount": "14500.00",
+        "date": "2026-08-03",
+        "notes": "Commercial Electric Meter Bill",
+        "createdAt": "2026-08-10 12:02:03"
+    },
+    {
+        "id": "exp-3",
+        "category": "Staff Salaries",
+        "amount": "40000.00",
+        "date": "2026-08-05",
+        "notes": "Kiosk Operator & Assistant Salaries",
+        "createdAt": "2026-08-10 12:02:03"
+    }
+]

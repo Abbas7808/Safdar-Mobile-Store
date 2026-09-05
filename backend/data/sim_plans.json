@@ -1,0 +1,21 @@
+[
+    {
+        "id": "plan-1787207308-788",
+        "network": "jazz",
+        "name": "Jazz Mahana Super Max",
+        "category": "all_in_one",
+        "validity": "30 Days",
+        "retailPrice": 1400,
+        "costPrice": 1320,
+        "profitMargin": 80,
+        "dataGb": "35 GB (15 GB 1am-9am)",
+        "onNetMins": "6000 Jazz Mins",
+        "offNetMins": "600 Off-Net Mins",
+        "smsCount": "6000 SMS",
+        "ussdCode": "*506#",
+        "description": "Super fast 4G monthly hybrid package",
+        "status": "active",
+        "createdAt": "2026-08-20T08:28:28+02:00",
+        "createdBy": "admin@admin.com"
+    }
+]

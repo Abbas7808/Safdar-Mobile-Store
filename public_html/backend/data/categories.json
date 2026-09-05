@@ -1,0 +1,37 @@
+[
+    {
+        "id": "accessories",
+        "name": "Mobile Accessories",
+        "icon": "fa-headphones",
+        "status": "active",
+        "show_in_menu": true
+    },
+    {
+        "id": "cctv",
+        "name": "CCTV Security",
+        "icon": "fa-video",
+        "status": "active",
+        "show_in_menu": true
+    },
+    {
+        "id": "mobiles",
+        "name": "Mobile Phones",
+        "icon": "fa-mobile-screen",
+        "status": "active",
+        "show_in_menu": true
+    },
+    {
+        "id": "computer_accessories",
+        "name": "Computer Accessories",
+        "icon": "fa-computer",
+        "status": "active",
+        "show_in_menu": false
+    },
+    {
+        "id": "network_accessories",
+        "name": "Network Accessories",
+        "icon": "fa-network-wired",
+        "status": "active",
+        "show_in_menu": false
+    }
+]

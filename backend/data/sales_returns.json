@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ret-1787205545-207",
+        "returnNo": "RET-20260820-4695",
+        "invoiceId": "sale-1787205545-523",
+        "invoiceNo": "INV-20260820-0009",
+        "customerName": "Audit Test Customer Tariq",
+        "customerPhone": "03339998877",
+        "refundAmount": 3800,
+        "reason": "Customer defective test exchange",
+        "restocked": true,
+        "restockedItems": [
+            {
+                "id": "acc-1",
+                "name": "Super Fast 65W GaN Wall Charger",
+                "qty": 1,
+                "sellingPrice": 3800
+            }
+        ],
+        "processedBy": "admin@admin.com",
+        "processedByRole": "super_admin",
+        "timestamp": "2026-08-20T07:59:05+02:00"
+    }
+]

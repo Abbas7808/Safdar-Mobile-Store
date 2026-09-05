@@ -1,0 +1,19 @@
+[
+    {
+        "id": "act-1787207308-567",
+        "mobileNumber": "03339688007",
+        "customerName": "Muhammad Munim",
+        "network": "jazz",
+        "packageName": "Jazz Mahana Super Max",
+        "retailPrice": 1400,
+        "costPrice": 1320,
+        "shopFee": 80,
+        "totalCollected": 1400,
+        "activationMethod": "retailer_load",
+        "trxId": "JA-PKG-7062492762",
+        "status": "activated",
+        "activatedAt": "2026-08-20T08:28:28+02:00",
+        "loggedBy": "admin@admin.com",
+        "notes": ""
+    }
+]

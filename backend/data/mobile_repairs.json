@@ -1,0 +1,32 @@
+[
+    {
+        "id": "REP-2026-001",
+        "receivedDate": "2026-08-17 06:07",
+        "deliveryDate": "2026-08-18 06:13",
+        "customerName": "Sajid Rehman",
+        "customerPhone": "0332",
+        "customerCity": "",
+        "deviceBrand": "Oppo",
+        "deviceModel": "1",
+        "deviceColor": "",
+        "deviceImei": "",
+        "devicePasscode": "",
+        "reportedFault": "Softwire",
+        "physicalCondition": "",
+        "issueResolved": "Softwire",
+        "partsUsed": "",
+        "partsCost": 0,
+        "laborCharges": 100,
+        "totalBill": 100,
+        "advancePaid": 100,
+        "balanceDue": 0,
+        "paymentStatus": "Paid in Full",
+        "paymentMethod": "Cash",
+        "jobStatus": "Delivered",
+        "technician": "Barkat",
+        "warranty": "30-Day Testing Warranty",
+        "notes": "",
+        "updatedAt": "2026-08-17 06:13:26",
+        "createdAt": "2026-08-17 06:12:37"
+    }
+]

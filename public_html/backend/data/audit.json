@@ -1,0 +1,3502 @@
+[
+    {
+        "id": "aud-1788064020-55",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: ::1)",
+        "timestamp": "2026-08-30T06:27:00+02:00"
+    },
+    {
+        "id": "aud-1788064004-14",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: ::1)",
+        "timestamp": "2026-08-30T06:26:44+02:00"
+    },
+    {
+        "id": "aud-1787994694-54",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260829-0016 of PKR 9000 (cash) (IP: ::1)",
+        "timestamp": "2026-08-29T11:11:34+02:00"
+    },
+    {
+        "id": "aud-1787993502-79",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260829-002 of PKR 5000 for khyalmat Khan (IP: ::1)",
+        "timestamp": "2026-08-29T10:51:42+02:00"
+    },
+    {
+        "id": "aud-1787991258-79",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260829-001 of PKR 52000 for Munim Abbas (IP: ::1)",
+        "timestamp": "2026-08-29T10:14:18+02:00"
+    },
+    {
+        "id": "aud-1787990637-45",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_DELETED",
+        "details": "[SUCCESS] Permanently deleted CCTV Project #CCTV-20260829-001 (Munim Abbas) - Reason: Administrative cleanup (IP: ::1)",
+        "timestamp": "2026-08-29T10:03:57+02:00"
+    },
+    {
+        "id": "aud-1787989036-92",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260829-001 of PKR 0 for Munim Abbas (IP: ::1)",
+        "timestamp": "2026-08-29T09:37:16+02:00"
+    },
+    {
+        "id": "aud-1787988706-32",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/sms\/admin\/index.php attempted without secret portal token (IP: ::1)",
+        "timestamp": "2026-08-29T09:31:46+02:00"
+    },
+    {
+        "id": "aud-1787988646-80",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/sms\/admin\/cctv.php attempted without secret portal token (IP: ::1)",
+        "timestamp": "2026-08-29T09:30:46+02:00"
+    },
+    {
+        "id": "aud-1787986956-22",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/sms\/admin\/cctv.php attempted without secret portal token (IP: ::1)",
+        "timestamp": "2026-08-29T09:02:36+02:00"
+    },
+    {
+        "id": "aud-1787986938-33",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/sms\/admin\/cctv.php attempted without secret portal token (IP: ::1)",
+        "timestamp": "2026-08-29T09:02:18+02:00"
+    },
+    {
+        "id": "aud-1787986670-66",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_DELETED",
+        "details": "[SUCCESS] Permanently deleted CCTV Project #CCTV-20260819-003 (Malik Usman Khattak) - Reason: Administrative cleanup (IP: ::1)",
+        "timestamp": "2026-08-29T08:57:50+02:00"
+    },
+    {
+        "id": "aud-1787986664-72",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_DELETED",
+        "details": "[SUCCESS] Permanently deleted CCTV Project #CCTV-20260818-002 (Dr. Farooq Ahmad) - Reason: Administrative cleanup (IP: ::1)",
+        "timestamp": "2026-08-29T08:57:44+02:00"
+    },
+    {
+        "id": "aud-1787986658-41",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_DELETED",
+        "details": "[SUCCESS] Permanently deleted CCTV Project #CCTV-20260815-001 (Haji Gulzar Khan) - Reason: Administrative cleanup (IP: ::1)",
+        "timestamp": "2026-08-29T08:57:38+02:00"
+    },
+    {
+        "id": "aud-1787986652-95",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_DELETED",
+        "details": "[SUCCESS] Permanently deleted CCTV Project #CCTV-20260820-004 (Al-Haram Fabrics Hangu) - Reason: Administrative cleanup (IP: ::1)",
+        "timestamp": "2026-08-29T08:57:32+02:00"
+    },
+    {
+        "id": "aud-1787985678-80",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: ::1)",
+        "timestamp": "2026-08-29T08:41:18+02:00"
+    },
+    {
+        "id": "aud-1787985651-87",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: ::1)",
+        "timestamp": "2026-08-29T08:40:51+02:00"
+    },
+    {
+        "id": "aud-1787985576-78",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: ::1)",
+        "timestamp": "2026-08-29T08:39:36+02:00"
+    },
+    {
+        "id": "aud-1787985574-81",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: ::1)",
+        "timestamp": "2026-08-29T08:39:34+02:00"
+    },
+    {
+        "id": "sec-1787850594-558",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP ::1 (IP: ::1)",
+        "timestamp": "2026-08-27 19:09:54"
+    },
+    {
+        "id": "sec-1787850538-251",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP ::1 (IP: ::1)",
+        "timestamp": "2026-08-27 19:08:58"
+    },
+    {
+        "id": "sec-1787850510-386",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: ::1)",
+        "timestamp": "2026-08-27 19:08:30"
+    },
+    {
+        "id": "sec-1787850463-548",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP ::1 (IP: ::1)",
+        "timestamp": "2026-08-27 19:07:43"
+    },
+    {
+        "id": "sec-1787850412-674",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP ::1 (IP: ::1)",
+        "timestamp": "2026-08-27 19:06:52"
+    },
+    {
+        "id": "sec-1787850389-903",
+        "user": "admin@admin.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP ::1 (IP: ::1)",
+        "timestamp": "2026-08-27 19:06:29"
+    },
+    {
+        "id": "sec-1787850343-426",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: ::1)",
+        "timestamp": "2026-08-27 19:05:43"
+    },
+    {
+        "id": "sec-1787723107-903",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-006 of PKR 0 for abbas (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:45:07"
+    },
+    {
+        "id": "sec-1787723107-903",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-006 of PKR 0 for abbas (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:45:07"
+    },
+    {
+        "id": "sec-1787723107-903",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-006 of PKR 0 for abbas (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:45:07"
+    },
+    {
+        "id": "sec-1787723107-903",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-006 of PKR 0 for abbas (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:45:07"
+    },
+    {
+        "id": "sec-1787722261-594",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-005 of PKR 0 for Munim (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:31:01"
+    },
+    {
+        "id": "sec-1787722261-594",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-005 of PKR 0 for Munim (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:31:01"
+    },
+    {
+        "id": "sec-1787722261-594",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-005 of PKR 0 for Munim (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:31:01"
+    },
+    {
+        "id": "sec-1787722261-594",
+        "user": "admin@admin.com",
+        "action": "CCTV_PROJECT_RECORDED",
+        "details": "[SUCCESS] Recorded CCTV project #CCTV-20260826-005 of PKR 0 for Munim (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:31:01"
+    },
+    {
+        "id": "sec-1787722205-635",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:05"
+    },
+    {
+        "id": "sec-1787722205-635",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:05"
+    },
+    {
+        "id": "sec-1787722205-635",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:05"
+    },
+    {
+        "id": "sec-1787722205-635",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:05"
+    },
+    {
+        "id": "sec-1787722203-882",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:03"
+    },
+    {
+        "id": "sec-1787722203-882",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:03"
+    },
+    {
+        "id": "sec-1787722203-882",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:03"
+    },
+    {
+        "id": "sec-1787722203-882",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:30:03"
+    },
+    {
+        "id": "sec-1787720579-687",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:59"
+    },
+    {
+        "id": "sec-1787720579-687",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:59"
+    },
+    {
+        "id": "sec-1787720579-687",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:59"
+    },
+    {
+        "id": "sec-1787720579-687",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:59"
+    },
+    {
+        "id": "sec-1787720578-354",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-718",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-354",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-718",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-354",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-718",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-354",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787720578-718",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.65)",
+        "timestamp": "2026-08-26 05:02:58"
+    },
+    {
+        "id": "sec-1787550243-350",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_DELETED",
+        "details": "[SUCCESS] Deleted bill 76555576565 - Reason: Administrative cleanup \/ mistake entry (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:44:03"
+    },
+    {
+        "id": "sec-1787550243-350",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_DELETED",
+        "details": "[SUCCESS] Deleted bill 76555576565 - Reason: Administrative cleanup \/ mistake entry (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:44:03"
+    },
+    {
+        "id": "sec-1787550243-350",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_DELETED",
+        "details": "[SUCCESS] Deleted bill 76555576565 - Reason: Administrative cleanup \/ mistake entry (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:44:03"
+    },
+    {
+        "id": "sec-1787550243-350",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_DELETED",
+        "details": "[SUCCESS] Deleted bill 76555576565 - Reason: Administrative cleanup \/ mistake entry (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:44:03"
+    },
+    {
+        "id": "sec-1787550218-774",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 1020 for Consumer 1234 (double) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:38"
+    },
+    {
+        "id": "sec-1787550218-774",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 1020 for Consumer 1234 (double) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:38"
+    },
+    {
+        "id": "sec-1787550218-774",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 1020 for Consumer 1234 (double) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:38"
+    },
+    {
+        "id": "sec-1787550218-774",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 1020 for Consumer 1234 (double) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:38"
+    },
+    {
+        "id": "sec-1787550194-167",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 4550 for Consumer 76555576565 (wrong bill) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:14"
+    },
+    {
+        "id": "sec-1787550194-167",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 4550 for Consumer 76555576565 (wrong bill) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:14"
+    },
+    {
+        "id": "sec-1787550194-167",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 4550 for Consumer 76555576565 (wrong bill) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:14"
+    },
+    {
+        "id": "sec-1787550194-167",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_RETURNED",
+        "details": "[SUCCESS] Processed return\/refund of PKR 4550 for Consumer 76555576565 (wrong bill) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:43:14"
+    },
+    {
+        "id": "sec-1787550165-597",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PESCO (Peshawar Electric Supply) bill for 1234 (PKR 1010) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:42:45"
+    },
+    {
+        "id": "sec-1787550165-597",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PESCO (Peshawar Electric Supply) bill for 1234 (PKR 1010) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:42:45"
+    },
+    {
+        "id": "sec-1787550165-597",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PESCO (Peshawar Electric Supply) bill for 1234 (PKR 1010) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:42:45"
+    },
+    {
+        "id": "sec-1787550165-597",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PESCO (Peshawar Electric Supply) bill for 1234 (PKR 1010) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:42:45"
+    },
+    {
+        "id": "sec-1787549651-823",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260824-0020 of PKR 8800 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:34:11"
+    },
+    {
+        "id": "sec-1787549651-823",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260824-0020 of PKR 8800 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:34:11"
+    },
+    {
+        "id": "sec-1787549651-823",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260824-0020 of PKR 8800 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:34:11"
+    },
+    {
+        "id": "sec-1787549651-823",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260824-0020 of PKR 8800 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:34:11"
+    },
+    {
+        "id": "sec-1787549566-481",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:46"
+    },
+    {
+        "id": "sec-1787549566-481",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:46"
+    },
+    {
+        "id": "sec-1787549566-481",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:46"
+    },
+    {
+        "id": "sec-1787549566-481",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:46"
+    },
+    {
+        "id": "sec-1787549563-476",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-805",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-476",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-805",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-476",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-805",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-476",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787549563-805",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-24 05:32:43"
+    },
+    {
+        "id": "sec-1787507219-969",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:59"
+    },
+    {
+        "id": "sec-1787507219-969",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:59"
+    },
+    {
+        "id": "sec-1787507219-969",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:59"
+    },
+    {
+        "id": "sec-1787507219-969",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:59"
+    },
+    {
+        "id": "sec-1787507214-724",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-883",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-724",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-883",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-724",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-883",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-724",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787507214-883",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 116.71.30.9)",
+        "timestamp": "2026-08-23 17:46:54"
+    },
+    {
+        "id": "sec-1787399392-377",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 41000 via easypaisa with PKR 200 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:49:52"
+    },
+    {
+        "id": "sec-1787399392-377",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 41000 via easypaisa with PKR 200 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:49:52"
+    },
+    {
+        "id": "sec-1787399392-377",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 41000 via easypaisa with PKR 200 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:49:52"
+    },
+    {
+        "id": "sec-1787399392-377",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 41000 via easypaisa with PKR 200 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:49:52"
+    },
+    {
+        "id": "sec-1787399287-724",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 6750 via easypaisa with PKR 150 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:48:07"
+    },
+    {
+        "id": "sec-1787399287-724",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 6750 via easypaisa with PKR 150 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:48:07"
+    },
+    {
+        "id": "sec-1787399287-724",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 6750 via easypaisa with PKR 150 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:48:07"
+    },
+    {
+        "id": "sec-1787399287-724",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 6750 via easypaisa with PKR 150 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:48:07"
+    },
+    {
+        "id": "sec-1787399200-510",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 100 via easypaisa with PKR 0 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:46:40"
+    },
+    {
+        "id": "sec-1787399200-510",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 100 via easypaisa with PKR 0 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:46:40"
+    },
+    {
+        "id": "sec-1787399200-510",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 100 via easypaisa with PKR 0 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:46:40"
+    },
+    {
+        "id": "sec-1787399200-510",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 100 via easypaisa with PKR 0 commission (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:46:40"
+    },
+    {
+        "id": "sec-1787399118-385",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:18"
+    },
+    {
+        "id": "sec-1787399118-385",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:18"
+    },
+    {
+        "id": "sec-1787399118-385",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:18"
+    },
+    {
+        "id": "sec-1787399118-385",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:18"
+    },
+    {
+        "id": "sec-1787399114-585",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:14"
+    },
+    {
+        "id": "sec-1787399114-585",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:14"
+    },
+    {
+        "id": "sec-1787399114-585",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:14"
+    },
+    {
+        "id": "sec-1787399114-585",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 11:45:14"
+    },
+    {
+        "id": "sec-1787388103-446",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0019 of PKR 3306 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:43"
+    },
+    {
+        "id": "sec-1787388103-446",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0019 of PKR 3306 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:43"
+    },
+    {
+        "id": "sec-1787388103-446",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0019 of PKR 3306 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:43"
+    },
+    {
+        "id": "sec-1787388103-446",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0019 of PKR 3306 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:43"
+    },
+    {
+        "id": "sec-1787388067-983",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0018 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:07"
+    },
+    {
+        "id": "sec-1787388067-983",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0018 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:07"
+    },
+    {
+        "id": "sec-1787388067-983",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0018 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:07"
+    },
+    {
+        "id": "sec-1787388067-983",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0018 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:41:07"
+    },
+    {
+        "id": "sec-1787388017-868",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0017 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:40:17"
+    },
+    {
+        "id": "sec-1787388017-868",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0017 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:40:17"
+    },
+    {
+        "id": "sec-1787388017-868",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0017 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:40:17"
+    },
+    {
+        "id": "sec-1787388017-868",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0017 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:40:17"
+    },
+    {
+        "id": "sec-1787387980-585",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0016 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:39:40"
+    },
+    {
+        "id": "sec-1787387980-585",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0016 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:39:40"
+    },
+    {
+        "id": "sec-1787387980-585",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0016 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:39:40"
+    },
+    {
+        "id": "sec-1787387980-585",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0016 of PKR 3787 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:39:40"
+    },
+    {
+        "id": "sec-1787387357-560",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0015 of PKR 6200 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:29:17"
+    },
+    {
+        "id": "sec-1787387357-560",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0015 of PKR 6200 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:29:17"
+    },
+    {
+        "id": "sec-1787387357-560",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0015 of PKR 6200 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:29:17"
+    },
+    {
+        "id": "sec-1787387357-560",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260822-0015 of PKR 6200 (cash) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 08:29:17"
+    },
+    {
+        "id": "sec-1787383434-958",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Prime (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 07:23:54"
+    },
+    {
+        "id": "sec-1787383434-958",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Prime (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 07:23:54"
+    },
+    {
+        "id": "sec-1787383434-958",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Prime (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 07:23:54"
+    },
+    {
+        "id": "sec-1787383434-958",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Prime (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 07:23:54"
+    },
+    {
+        "id": "sec-1787383162-486",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Upower 400 All in One for 03369666269 (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:19:22"
+    },
+    {
+        "id": "sec-1787383162-486",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Upower 400 All in One for 03369666269 (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:19:22"
+    },
+    {
+        "id": "sec-1787383162-486",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Upower 400 All in One for 03369666269 (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:19:22"
+    },
+    {
+        "id": "sec-1787383162-486",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Upower 400 All in One for 03369666269 (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:19:22"
+    },
+    {
+        "id": "sec-1787383121-518",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Upower 400 All in One (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:18:41"
+    },
+    {
+        "id": "sec-1787383121-518",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Upower 400 All in One (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:18:41"
+    },
+    {
+        "id": "sec-1787383121-518",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Upower 400 All in One (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:18:41"
+    },
+    {
+        "id": "sec-1787383121-518",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Upower 400 All in One (PKR 410) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:18:41"
+    },
+    {
+        "id": "sec-1787382734-211",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated YouTube Offer for 03355868168 (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:12:14"
+    },
+    {
+        "id": "sec-1787382734-211",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated YouTube Offer for 03355868168 (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:12:14"
+    },
+    {
+        "id": "sec-1787382734-211",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated YouTube Offer for 03355868168 (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:12:14"
+    },
+    {
+        "id": "sec-1787382734-211",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated YouTube Offer for 03355868168 (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:12:14"
+    },
+    {
+        "id": "sec-1787382694-621",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: YouTube Offer (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:11:34"
+    },
+    {
+        "id": "sec-1787382694-621",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: YouTube Offer (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:11:34"
+    },
+    {
+        "id": "sec-1787382694-621",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: YouTube Offer (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:11:34"
+    },
+    {
+        "id": "sec-1787382694-621",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: YouTube Offer (PKR 150) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:11:34"
+    },
+    {
+        "id": "sec-1787382525-618",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated load for 03035280046 (PKR 280) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:08:45"
+    },
+    {
+        "id": "sec-1787382525-618",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated load for 03035280046 (PKR 280) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:08:45"
+    },
+    {
+        "id": "sec-1787382525-618",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated load for 03035280046 (PKR 280) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:08:45"
+    },
+    {
+        "id": "sec-1787382525-618",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated load for 03035280046 (PKR 280) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:08:45"
+    },
+    {
+        "id": "sec-1787382436-820",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03345518108 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:07:16"
+    },
+    {
+        "id": "sec-1787382436-820",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03345518108 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:07:16"
+    },
+    {
+        "id": "sec-1787382436-820",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03345518108 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:07:16"
+    },
+    {
+        "id": "sec-1787382436-820",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03345518108 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:07:16"
+    },
+    {
+        "id": "sec-1787382378-341",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03344350505 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:06:18"
+    },
+    {
+        "id": "sec-1787382378-341",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03344350505 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:06:18"
+    },
+    {
+        "id": "sec-1787382378-341",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03344350505 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:06:18"
+    },
+    {
+        "id": "sec-1787382378-341",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Social Grand for 03344350505 (PKR 800) (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:06:18"
+    },
+    {
+        "id": "sec-1787382340-151",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:40"
+    },
+    {
+        "id": "sec-1787382340-151",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:40"
+    },
+    {
+        "id": "sec-1787382340-151",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:40"
+    },
+    {
+        "id": "sec-1787382340-151",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:40"
+    },
+    {
+        "id": "sec-1787382337-725",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-974",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-725",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-974",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-725",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-974",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-725",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382337-974",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:37"
+    },
+    {
+        "id": "sec-1787382316-928",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/packages.php attempted without secret portal token (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:16"
+    },
+    {
+        "id": "sec-1787382316-928",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/packages.php attempted without secret portal token (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:16"
+    },
+    {
+        "id": "sec-1787382316-928",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/packages.php attempted without secret portal token (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:16"
+    },
+    {
+        "id": "sec-1787382316-928",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/packages.php attempted without secret portal token (IP: 123.253.95.173)",
+        "timestamp": "2026-08-22 07:05:16"
+    },
+    {
+        "id": "sec-1787379342-147",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 06:15:42"
+    },
+    {
+        "id": "sec-1787379342-147",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 06:15:42"
+    },
+    {
+        "id": "sec-1787379342-147",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 06:15:42"
+    },
+    {
+        "id": "sec-1787379342-147",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 06:15:42"
+    },
+    {
+        "id": "sec-1787378189-135",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03494132756 (PKR 100) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:56:29"
+    },
+    {
+        "id": "sec-1787378189-135",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03494132756 (PKR 100) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:56:29"
+    },
+    {
+        "id": "sec-1787378189-135",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03494132756 (PKR 100) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:56:29"
+    },
+    {
+        "id": "sec-1787378189-135",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03494132756 (PKR 100) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:56:29"
+    },
+    {
+        "id": "sec-1787378125-431",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03368572570 (PKR 200) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:55:25"
+    },
+    {
+        "id": "sec-1787378125-431",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03368572570 (PKR 200) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:55:25"
+    },
+    {
+        "id": "sec-1787378125-431",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03368572570 (PKR 200) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:55:25"
+    },
+    {
+        "id": "sec-1787378125-431",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Load for 03368572570 (PKR 200) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:55:25"
+    },
+    {
+        "id": "sec-1787377766-506",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 590 via easypaisa with PKR 10 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:49:26"
+    },
+    {
+        "id": "sec-1787377766-506",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 590 via easypaisa with PKR 10 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:49:26"
+    },
+    {
+        "id": "sec-1787377766-506",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 590 via easypaisa with PKR 10 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:49:26"
+    },
+    {
+        "id": "sec-1787377766-506",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 590 via easypaisa with PKR 10 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:49:26"
+    },
+    {
+        "id": "sec-1787377538-571",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 30000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:45:38"
+    },
+    {
+        "id": "sec-1787377538-571",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 30000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:45:38"
+    },
+    {
+        "id": "sec-1787377538-571",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 30000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:45:38"
+    },
+    {
+        "id": "sec-1787377538-571",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 30000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:45:38"
+    },
+    {
+        "id": "sec-1787377441-608",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 15000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:44:01"
+    },
+    {
+        "id": "sec-1787377441-608",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 15000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:44:01"
+    },
+    {
+        "id": "sec-1787377441-608",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 15000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:44:01"
+    },
+    {
+        "id": "sec-1787377441-608",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 15000 via easypaisa with PKR 100 commission (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:44:01"
+    },
+    {
+        "id": "sec-1787377155-435",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Weekly Power Max for 03348897520 (PKR 560) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:39:15"
+    },
+    {
+        "id": "sec-1787377155-435",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Weekly Power Max for 03348897520 (PKR 560) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:39:15"
+    },
+    {
+        "id": "sec-1787377155-435",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Weekly Power Max for 03348897520 (PKR 560) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:39:15"
+    },
+    {
+        "id": "sec-1787377155-435",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Weekly Power Max for 03348897520 (PKR 560) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:39:15"
+    },
+    {
+        "id": "sec-1787377100-894",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Max (PKR 550) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:38:20"
+    },
+    {
+        "id": "sec-1787377100-894",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Max (PKR 550) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:38:20"
+    },
+    {
+        "id": "sec-1787377100-894",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Max (PKR 550) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:38:20"
+    },
+    {
+        "id": "sec-1787377100-894",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Weekly Power Max (PKR 550) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 05:38:20"
+    },
+    {
+        "id": "sec-1787375977-132",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-984",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-132",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-984",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-132",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-984",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-132",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375977-984",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:19:37"
+    },
+    {
+        "id": "sec-1787375614-501",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:34"
+    },
+    {
+        "id": "sec-1787375614-501",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:34"
+    },
+    {
+        "id": "sec-1787375614-501",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:34"
+    },
+    {
+        "id": "sec-1787375614-501",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:34"
+    },
+    {
+        "id": "sec-1787375611-336",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-563",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-336",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-563",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-336",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-563",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-336",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375611-563",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:13:31"
+    },
+    {
+        "id": "sec-1787375601-587",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Monthly Call Plus for 03109944833 (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:13:21"
+    },
+    {
+        "id": "sec-1787375601-587",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Monthly Call Plus for 03109944833 (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:13:21"
+    },
+    {
+        "id": "sec-1787375601-587",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Monthly Call Plus for 03109944833 (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:13:21"
+    },
+    {
+        "id": "sec-1787375601-587",
+        "user": "admin@admin.com",
+        "action": "PACKAGE_ACTIVATED",
+        "details": "[SUCCESS] Activated Monthly Call Plus for 03109944833 (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:13:21"
+    },
+    {
+        "id": "sec-1787375407-678",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added zong package: Monthly Call Plus (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:10:07"
+    },
+    {
+        "id": "sec-1787375407-678",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added zong package: Monthly Call Plus (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:10:07"
+    },
+    {
+        "id": "sec-1787375407-678",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added zong package: Monthly Call Plus (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:10:07"
+    },
+    {
+        "id": "sec-1787375407-678",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added zong package: Monthly Call Plus (PKR 600) (IP: 123.253.95.175)",
+        "timestamp": "2026-08-22 05:10:07"
+    },
+    {
+        "id": "sec-1787375198-384",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PTCL Flash Fiber & Landline bill for 76555576565 (PKR 4500) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:06:38"
+    },
+    {
+        "id": "sec-1787375198-384",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PTCL Flash Fiber & Landline bill for 76555576565 (PKR 4500) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:06:38"
+    },
+    {
+        "id": "sec-1787375198-384",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PTCL Flash Fiber & Landline bill for 76555576565 (PKR 4500) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:06:38"
+    },
+    {
+        "id": "sec-1787375198-384",
+        "user": "admin@admin.com",
+        "action": "UTILITY_BILL_PAID",
+        "details": "[SUCCESS] Recorded PTCL Flash Fiber & Landline bill for 76555576565 (PKR 4500) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:06:38"
+    },
+    {
+        "id": "sec-1787374885-995",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:25"
+    },
+    {
+        "id": "sec-1787374885-995",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:25"
+    },
+    {
+        "id": "sec-1787374885-995",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:25"
+    },
+    {
+        "id": "sec-1787374885-995",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:25"
+    },
+    {
+        "id": "sec-1787374861-549",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:01"
+    },
+    {
+        "id": "sec-1787374861-549",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:01"
+    },
+    {
+        "id": "sec-1787374861-549",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:01"
+    },
+    {
+        "id": "sec-1787374861-549",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-22 05:01:01"
+    },
+    {
+        "id": "sec-1787371656-197",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:36"
+    },
+    {
+        "id": "sec-1787371656-197",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:36"
+    },
+    {
+        "id": "sec-1787371656-197",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:36"
+    },
+    {
+        "id": "sec-1787371656-197",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:36"
+    },
+    {
+        "id": "sec-1787371653-251",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-783",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-251",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-783",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-251",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-783",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-251",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787371653-783",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.174)",
+        "timestamp": "2026-08-22 04:07:33"
+    },
+    {
+        "id": "sec-1787329453-665",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:13"
+    },
+    {
+        "id": "sec-1787329453-665",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:13"
+    },
+    {
+        "id": "sec-1787329453-665",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:13"
+    },
+    {
+        "id": "sec-1787329453-665",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:13"
+    },
+    {
+        "id": "sec-1787329451-383",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:11"
+    },
+    {
+        "id": "sec-1787329451-383",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:11"
+    },
+    {
+        "id": "sec-1787329451-383",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:11"
+    },
+    {
+        "id": "sec-1787329451-383",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:24:11"
+    },
+    {
+        "id": "sec-1787329105-407",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:18:25"
+    },
+    {
+        "id": "sec-1787329105-407",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:18:25"
+    },
+    {
+        "id": "sec-1787329105-407",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:18:25"
+    },
+    {
+        "id": "sec-1787329105-407",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 16:18:25"
+    },
+    {
+        "id": "sec-1787326473-279",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:33"
+    },
+    {
+        "id": "sec-1787326473-279",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:33"
+    },
+    {
+        "id": "sec-1787326473-279",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:33"
+    },
+    {
+        "id": "sec-1787326473-279",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:33"
+    },
+    {
+        "id": "sec-1787326469-362",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-447",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-362",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-447",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-362",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-447",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-362",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326469-447",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:34:29"
+    },
+    {
+        "id": "sec-1787326427-325",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:47"
+    },
+    {
+        "id": "sec-1787326427-325",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:47"
+    },
+    {
+        "id": "sec-1787326427-325",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:47"
+    },
+    {
+        "id": "sec-1787326427-325",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:47"
+    },
+    {
+        "id": "sec-1787326425-231",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-936",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-231",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-936",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-231",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-936",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-231",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787326425-936",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-21 15:33:45"
+    },
+    {
+        "id": "sec-1787310964-922",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 11:16:04"
+    },
+    {
+        "id": "sec-1787310964-922",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 11:16:04"
+    },
+    {
+        "id": "sec-1787310964-922",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 11:16:04"
+    },
+    {
+        "id": "sec-1787310964-922",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 11:16:04"
+    },
+    {
+        "id": "sec-1787306087-644",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:47"
+    },
+    {
+        "id": "sec-1787306087-644",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:47"
+    },
+    {
+        "id": "sec-1787306087-644",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:47"
+    },
+    {
+        "id": "sec-1787306087-644",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:47"
+    },
+    {
+        "id": "sec-1787306083-655",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-776",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-655",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-776",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-655",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-776",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-655",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787306083-776",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.172)",
+        "timestamp": "2026-08-21 09:54:43"
+    },
+    {
+        "id": "sec-1787235287-403",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/pos.php attempted without secret portal token (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:14:47"
+    },
+    {
+        "id": "sec-1787235287-403",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/pos.php attempted without secret portal token (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:14:47"
+    },
+    {
+        "id": "sec-1787235287-403",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/pos.php attempted without secret portal token (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:14:47"
+    },
+    {
+        "id": "sec-1787235287-403",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/pos.php attempted without secret portal token (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:14:47"
+    },
+    {
+        "id": "sec-1787234798-270",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0014 of PKR 1500 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:38"
+    },
+    {
+        "id": "sec-1787234798-270",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0014 of PKR 1500 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:38"
+    },
+    {
+        "id": "sec-1787234798-270",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0014 of PKR 1500 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:38"
+    },
+    {
+        "id": "sec-1787234798-270",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0014 of PKR 1500 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:38"
+    },
+    {
+        "id": "sec-1787234778-238",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0013 of PKR 70000 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:18"
+    },
+    {
+        "id": "sec-1787234778-238",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0013 of PKR 70000 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:18"
+    },
+    {
+        "id": "sec-1787234778-238",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0013 of PKR 70000 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:18"
+    },
+    {
+        "id": "sec-1787234778-238",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0013 of PKR 70000 (cash) (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:06:18"
+    },
+    {
+        "id": "sec-1787234675-164",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:35"
+    },
+    {
+        "id": "sec-1787234675-164",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:35"
+    },
+    {
+        "id": "sec-1787234675-164",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:35"
+    },
+    {
+        "id": "sec-1787234675-164",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:35"
+    },
+    {
+        "id": "sec-1787234672-475",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:32"
+    },
+    {
+        "id": "sec-1787234672-475",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:32"
+    },
+    {
+        "id": "sec-1787234672-475",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:32"
+    },
+    {
+        "id": "sec-1787234672-475",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 223.123.86.5)",
+        "timestamp": "2026-08-20 14:04:32"
+    },
+    {
+        "id": "sec-1787224661-598",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 11:17:41"
+    },
+    {
+        "id": "sec-1787224661-598",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 11:17:41"
+    },
+    {
+        "id": "sec-1787224661-598",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 11:17:41"
+    },
+    {
+        "id": "sec-1787224661-598",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 11:17:41"
+    },
+    {
+        "id": "sec-1787220490-730",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-20 10:08:10"
+    },
+    {
+        "id": "sec-1787220490-730",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-20 10:08:10"
+    },
+    {
+        "id": "sec-1787220490-730",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-20 10:08:10"
+    },
+    {
+        "id": "sec-1787220490-730",
+        "user": "admin@admin.com",
+        "action": "SIM_PLAN_CREATED",
+        "details": "[SUCCESS] Added ufone package: Social Grand (PKR 800) (IP: 123.253.95.174)",
+        "timestamp": "2026-08-20 10:08:10"
+    },
+    {
+        "id": "sec-1787220147-682",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 200 via easypaisa with PKR 10 commission (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 10:02:27"
+    },
+    {
+        "id": "sec-1787220147-682",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 200 via easypaisa with PKR 10 commission (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 10:02:27"
+    },
+    {
+        "id": "sec-1787220147-682",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 200 via easypaisa with PKR 10 commission (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 10:02:27"
+    },
+    {
+        "id": "sec-1787220147-682",
+        "user": "admin@admin.com",
+        "action": "FINANCIAL_TX_RECORDED",
+        "details": "[SUCCESS] Recorded cash_in of PKR 200 via easypaisa with PKR 10 commission (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 10:02:27"
+    },
+    {
+        "id": "sec-1787219641-602",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:54:01"
+    },
+    {
+        "id": "sec-1787219641-602",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:54:01"
+    },
+    {
+        "id": "sec-1787219641-602",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:54:01"
+    },
+    {
+        "id": "sec-1787219641-602",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:54:01"
+    },
+    {
+        "id": "sec-1787219563-289",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-542",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-289",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-542",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-289",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-542",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-289",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219563-542",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.175)",
+        "timestamp": "2026-08-20 09:52:43"
+    },
+    {
+        "id": "sec-1787219447-457",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 123.253.95.173 (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:47"
+    },
+    {
+        "id": "sec-1787219447-457",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 123.253.95.173 (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:47"
+    },
+    {
+        "id": "sec-1787219447-457",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 123.253.95.173 (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:47"
+    },
+    {
+        "id": "sec-1787219447-457",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 123.253.95.173 (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:47"
+    },
+    {
+        "id": "sec-1787219441-226",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-504",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-226",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-504",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-226",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-504",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-226",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787219441-504",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 123.253.95.173)",
+        "timestamp": "2026-08-20 09:50:41"
+    },
+    {
+        "id": "sec-1787215223-586",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:23"
+    },
+    {
+        "id": "sec-1787215223-586",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:23"
+    },
+    {
+        "id": "sec-1787215223-586",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:23"
+    },
+    {
+        "id": "sec-1787215223-586",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:23"
+    },
+    {
+        "id": "sec-1787215220-126",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:20"
+    },
+    {
+        "id": "sec-1787215220-126",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:20"
+    },
+    {
+        "id": "sec-1787215220-126",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:20"
+    },
+    {
+        "id": "sec-1787215220-126",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:40:20"
+    },
+    {
+        "id": "sec-1787215176-658",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:36"
+    },
+    {
+        "id": "sec-1787215176-658",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:36"
+    },
+    {
+        "id": "sec-1787215176-658",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:36"
+    },
+    {
+        "id": "sec-1787215176-658",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:36"
+    },
+    {
+        "id": "sec-1787215174-647",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-922",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-647",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-922",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-647",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-922",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-647",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215174-922",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:34"
+    },
+    {
+        "id": "sec-1787215158-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:18"
+    },
+    {
+        "id": "sec-1787215158-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:18"
+    },
+    {
+        "id": "sec-1787215158-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:18"
+    },
+    {
+        "id": "sec-1787215158-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:18"
+    },
+    {
+        "id": "sec-1787215155-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:15"
+    },
+    {
+        "id": "sec-1787215155-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:15"
+    },
+    {
+        "id": "sec-1787215155-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:15"
+    },
+    {
+        "id": "sec-1787215155-787",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:15"
+    },
+    {
+        "id": "sec-1787215153-431",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:13"
+    },
+    {
+        "id": "sec-1787215153-431",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:13"
+    },
+    {
+        "id": "sec-1787215153-431",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:13"
+    },
+    {
+        "id": "sec-1787215153-431",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_PAGE_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/index.php attempted without secret portal token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:39:13"
+    },
+    {
+        "id": "sec-1787213761-445",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:16:01"
+    },
+    {
+        "id": "sec-1787213761-445",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:16:01"
+    },
+    {
+        "id": "sec-1787213761-445",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:16:01"
+    },
+    {
+        "id": "sec-1787213761-445",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:16:01"
+    },
+    {
+        "id": "sec-1787213733-668",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:15:33"
+    },
+    {
+        "id": "sec-1787213733-668",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:15:33"
+    },
+    {
+        "id": "sec-1787213733-668",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:15:33"
+    },
+    {
+        "id": "sec-1787213733-668",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:15:33"
+    },
+    {
+        "id": "sec-1787213544-642",
+        "user": "admin@admin.com",
+        "action": "SALE_RETURNED",
+        "details": "[SUCCESS] Processed Return for Invoice #INV-20260820-0012 of PKR 70000 (Reason: Customer returned item \/ Change of mind) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:24"
+    },
+    {
+        "id": "sec-1787213544-642",
+        "user": "admin@admin.com",
+        "action": "SALE_RETURNED",
+        "details": "[SUCCESS] Processed Return for Invoice #INV-20260820-0012 of PKR 70000 (Reason: Customer returned item \/ Change of mind) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:24"
+    },
+    {
+        "id": "sec-1787213544-642",
+        "user": "admin@admin.com",
+        "action": "SALE_RETURNED",
+        "details": "[SUCCESS] Processed Return for Invoice #INV-20260820-0012 of PKR 70000 (Reason: Customer returned item \/ Change of mind) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:24"
+    },
+    {
+        "id": "sec-1787213544-642",
+        "user": "admin@admin.com",
+        "action": "SALE_RETURNED",
+        "details": "[SUCCESS] Processed Return for Invoice #INV-20260820-0012 of PKR 70000 (Reason: Customer returned item \/ Change of mind) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:24"
+    },
+    {
+        "id": "sec-1787213530-427",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0012 of PKR 70000 (cash) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:10"
+    },
+    {
+        "id": "sec-1787213530-427",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0012 of PKR 70000 (cash) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:10"
+    },
+    {
+        "id": "sec-1787213530-427",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0012 of PKR 70000 (cash) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:10"
+    },
+    {
+        "id": "sec-1787213530-427",
+        "user": "admin@admin.com",
+        "action": "SALE_CREATED",
+        "details": "[SUCCESS] Generated Invoice #INV-20260820-0012 of PKR 70000 (cash) (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:12:10"
+    },
+    {
+        "id": "sec-1787213320-191",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:40"
+    },
+    {
+        "id": "sec-1787213320-191",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:40"
+    },
+    {
+        "id": "sec-1787213320-191",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:40"
+    },
+    {
+        "id": "sec-1787213320-191",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:40"
+    },
+    {
+        "id": "sec-1787213296-926",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:16"
+    },
+    {
+        "id": "sec-1787213296-926",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:16"
+    },
+    {
+        "id": "sec-1787213296-926",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:16"
+    },
+    {
+        "id": "sec-1787213296-926",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:08:16"
+    },
+    {
+        "id": "sec-1787213249-410",
+        "user": "admin@admin.con",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:07:29"
+    },
+    {
+        "id": "sec-1787213249-410",
+        "user": "admin@admin.con",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:07:29"
+    },
+    {
+        "id": "sec-1787213249-410",
+        "user": "admin@admin.con",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:07:29"
+    },
+    {
+        "id": "sec-1787213249-410",
+        "user": "admin@admin.con",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:07:29"
+    },
+    {
+        "id": "sec-1787213208-349",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-435",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-349",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-435",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-349",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-435",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-349",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213208-435",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:48"
+    },
+    {
+        "id": "sec-1787213167-637",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:07"
+    },
+    {
+        "id": "sec-1787213167-637",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:07"
+    },
+    {
+        "id": "sec-1787213167-637",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:07"
+    },
+    {
+        "id": "sec-1787213167-637",
+        "user": "admin@admin.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:06:07"
+    },
+    {
+        "id": "sec-1787213105-456",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:05:05"
+    },
+    {
+        "id": "sec-1787213105-456",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:05:05"
+    },
+    {
+        "id": "sec-1787213105-456",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:05:05"
+    },
+    {
+        "id": "sec-1787213105-456",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:05:05"
+    },
+    {
+        "id": "sec-1787213075-678",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:04:35"
+    },
+    {
+        "id": "sec-1787213075-678",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:04:35"
+    },
+    {
+        "id": "sec-1787213075-678",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:04:35"
+    },
+    {
+        "id": "sec-1787213075-678",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:04:35"
+    },
+    {
+        "id": "sec-1787213038-310",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:58"
+    },
+    {
+        "id": "sec-1787213038-310",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:58"
+    },
+    {
+        "id": "sec-1787213038-310",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:58"
+    },
+    {
+        "id": "sec-1787213038-310",
+        "user": "admin",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:58"
+    },
+    {
+        "id": "sec-1787213031-377",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:51"
+    },
+    {
+        "id": "sec-1787213031-377",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:51"
+    },
+    {
+        "id": "sec-1787213031-377",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:51"
+    },
+    {
+        "id": "sec-1787213031-377",
+        "user": "user@user.com",
+        "action": "LOGIN_FAILED",
+        "details": "[FAILED] Failed login attempt from IP 182.185.113.187 (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:51"
+    },
+    {
+        "id": "sec-1787213027-426",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-800",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-426",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-800",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-426",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-800",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-426",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787213027-800",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 08:03:47"
+    },
+    {
+        "id": "sec-1787207414-389",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 06:30:14"
+    },
+    {
+        "id": "sec-1787207414-389",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 06:30:14"
+    },
+    {
+        "id": "sec-1787207414-389",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 06:30:14"
+    },
+    {
+        "id": "sec-1787207414-389",
+        "user": "GUEST",
+        "action": "DIRECT_ADMIN_URL_BLOCKED",
+        "details": "[DENIED] Direct access to \/admin\/login.php attempted without secret URL token (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 06:30:14"
+    },
+    {
+        "id": "sec-1787203802-390",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:30:02"
+    },
+    {
+        "id": "sec-1787203802-390",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:30:02"
+    },
+    {
+        "id": "sec-1787203802-390",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:30:02"
+    },
+    {
+        "id": "sec-1787203802-390",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:30:02"
+    },
+    {
+        "id": "sec-1787203799-196",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-316",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-196",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-316",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-196",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-316",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-196",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203799-316",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:59"
+    },
+    {
+        "id": "sec-1787203780-537",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:40"
+    },
+    {
+        "id": "sec-1787203780-537",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:40"
+    },
+    {
+        "id": "sec-1787203780-537",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:40"
+    },
+    {
+        "id": "sec-1787203780-537",
+        "user": "user@user.com",
+        "action": "LOGIN_SUCCESS",
+        "details": "[SUCCESS] User authenticated successfully (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:40"
+    },
+    {
+        "id": "sec-1787203777-649",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    },
+    {
+        "id": "sec-1787203777-879",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    },
+    {
+        "id": "sec-1787203777-649",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    },
+    {
+        "id": "sec-1787203777-879",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    },
+    {
+        "id": "sec-1787203777-649",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    },
+    {
+        "id": "sec-1787203777-879",
+        "user": "GUEST",
+        "action": "SECRET_PORTAL_ACCESSED",
+        "details": "[SUCCESS] Valid secret admin portal entry accessed via slug 'secure-management-portal' (IP: 182.185.113.187)",
+        "timestamp": "2026-08-20 05:29:37"
+    }
+]

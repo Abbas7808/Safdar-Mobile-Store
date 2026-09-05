@@ -1,0 +1,732 @@
+[
+    {
+        "id": "cctv-cat-1",
+        "name": "UNV 4 port DVR xvr301-04f",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 9500
+    },
+    {
+        "id": "cctv-cat-2",
+        "name": "UNV 8 port DVR xvr301-08f",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 14500
+    },
+    {
+        "id": "cctv-cat-3",
+        "name": "UNV Analog Camera 2 MP UAC-B112-F40-X",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "Analog Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 3800
+    },
+    {
+        "id": "cctv-cat-4",
+        "name": "UNV Analog Camera 2 MP Doom UAC-T112-F28-X",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "Dome Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 3800
+    },
+    {
+        "id": "cctv-cat-5",
+        "name": "UNV Color Night Camera 2 MP UAC-B112-F40-W-X",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "Color Night Vision Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 4800
+    },
+    {
+        "id": "cctv-cat-6",
+        "name": "Dlink 4 POT Switch 100/1000m SFP",
+        "brand": "D-Link",
+        "category": "cctv",
+        "subCategory": "Network Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 6500
+    },
+    {
+        "id": "cctv-cat-7",
+        "name": "Smart POE Switch 8 POT",
+        "brand": "Smart",
+        "category": "cctv",
+        "subCategory": "POE Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 8500
+    },
+    {
+        "id": "cctv-cat-8",
+        "name": "UNV 8 POT Ethernet Switch NSW2010-10T POE",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "POE Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 12500
+    },
+    {
+        "id": "cctv-cat-9",
+        "name": "UNV 4 POT Ethernet Switch NSW2010-6T POE",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "POE Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 7500
+    },
+    {
+        "id": "cctv-cat-10",
+        "name": "Fiber Optic Patch Cord 3M Paigtail",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Fiber Optics",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 450
+    },
+    {
+        "id": "cctv-cat-11",
+        "name": "Dlink Rj45 Conector copper",
+        "brand": "D-Link",
+        "category": "cctv",
+        "subCategory": "Connectors",
+        "dealer": "New japan electronic",
+        "unit": "Pkt",
+        "defaultPrice": 850
+    },
+    {
+        "id": "cctv-cat-12",
+        "name": "AMP Rj45 Conector",
+        "brand": "AMP",
+        "category": "cctv",
+        "subCategory": "Connectors",
+        "dealer": "New japan electronic",
+        "unit": "Pkt",
+        "defaultPrice": 950
+    },
+    {
+        "id": "cctv-cat-13",
+        "name": "UTP Topsat Cat6 Cable 24G",
+        "brand": "Topsat",
+        "category": "cctv",
+        "subCategory": "Network Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 8500
+    },
+    {
+        "id": "cctv-cat-14",
+        "name": "UTP Topsat Cat6 Cable 23G",
+        "brand": "Topsat",
+        "category": "cctv",
+        "subCategory": "Network Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 9500
+    },
+    {
+        "id": "cctv-cat-15",
+        "name": "Dahua DVR 4 POT 2 way Talk DH-XVR1B04-I/T",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 10500
+    },
+    {
+        "id": "cctv-cat-16",
+        "name": "Dahua DVR 8 POT 2 way Talk DH-XVR1B08-I/T",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 16500
+    },
+    {
+        "id": "cctv-cat-17",
+        "name": "Dahua Camera Doom 2 MP DH-HAC-T5E20P",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "Dome Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 3900
+    },
+    {
+        "id": "cctv-cat-18",
+        "name": "Dahua Camera Bullet 2 MP DH-HAC-B5E20P",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "Bullet Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 4200
+    },
+    {
+        "id": "cctv-cat-19",
+        "name": "Dahua Camera Bullet 2MP Duel Light with MIC DH-HAC-B1A21P-U-IL-A",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "Bullet Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 5200
+    },
+    {
+        "id": "cctv-cat-20",
+        "name": "Hikvision DVR 4 POT DS-7104HGHI-M1",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 10000
+    },
+    {
+        "id": "cctv-cat-21",
+        "name": "Hikvision DVR 8 POT DS-7108HGHI-M1/T",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 15500
+    },
+    {
+        "id": "cctv-cat-22",
+        "name": "Hikvision Color Camera Bullet 2 MP DS-2CE 16 DOT-EXIPF",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "Bullet Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 4200
+    },
+    {
+        "id": "cctv-cat-23",
+        "name": "Hikvision Color Camera Doom 2 MP DS-2CE 76 DOT-EXIPF",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "Dome Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 3900
+    },
+    {
+        "id": "cctv-cat-24",
+        "name": "Hikvision Duel Light Camera 2 MP DS-2CE 16 DOT-EXIPF",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "Bullet Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 4900
+    },
+    {
+        "id": "cctv-cat-25",
+        "name": "Dell Hardisk Non Warranty 500 GB",
+        "brand": "Dell",
+        "category": "cctv",
+        "subCategory": "Storage / Hard Disks",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 2200
+    },
+    {
+        "id": "cctv-cat-26",
+        "name": "Seagate Hardisk with 8 Months Warranty 500 GB 6vvj53PF",
+        "brand": "Seagate",
+        "category": "cctv",
+        "subCategory": "Storage / Hard Disks",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 2800
+    },
+    {
+        "id": "cctv-cat-27",
+        "name": "BNC RED Cable Copper",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Connectors & Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 90
+    },
+    {
+        "id": "cctv-cat-28",
+        "name": "DC Lead Black",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Power Supplies & Leads",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 60
+    },
+    {
+        "id": "cctv-cat-29",
+        "name": "Adapter 2Am 12v",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Power Supplies & Leads",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 450
+    },
+    {
+        "id": "cctv-cat-30",
+        "name": "ATC water Proof Supply IP43 10AM",
+        "brand": "ATC",
+        "category": "cctv",
+        "subCategory": "Power Supplies & Leads",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 2200
+    },
+    {
+        "id": "cctv-cat-31",
+        "name": "HP LCD 22inch",
+        "brand": "HP",
+        "category": "cctv",
+        "subCategory": "Displays & Monitors",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 12500
+    },
+    {
+        "id": "cctv-cat-32",
+        "name": "HDMI Cable 3 M",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "HDMI / Display Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 450
+    },
+    {
+        "id": "cctv-cat-33",
+        "name": "HDMI Cable 10 M",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "HDMI / Display Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 1400
+    },
+    {
+        "id": "cctv-cat-34",
+        "name": "Power Cable",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wiring",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 250
+    },
+    {
+        "id": "cctv-cat-35",
+        "name": "VJA Cable 5M",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "HDMI / Display Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 550
+    },
+    {
+        "id": "cctv-cat-36",
+        "name": "VJA Cable 10 M",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "HDMI / Display Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 950
+    },
+    {
+        "id": "cctv-cat-37",
+        "name": "HDMI Branded Cable",
+        "brand": "Branded",
+        "category": "cctv",
+        "subCategory": "HDMI / Display Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 850
+    },
+    {
+        "id": "cctv-cat-38",
+        "name": "Copper Cable 32 Jall RJ 59",
+        "brand": "Coaxial",
+        "category": "cctv",
+        "subCategory": "CCTV Coaxial Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 7500
+    },
+    {
+        "id": "cctv-cat-39",
+        "name": "Copper Cable 48 Jall RJ 59",
+        "brand": "Coaxial",
+        "category": "cctv",
+        "subCategory": "CCTV Coaxial Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 9500
+    },
+    {
+        "id": "cctv-cat-40",
+        "name": "China Cable 32 Jall Roll RJ59",
+        "brand": "China Coaxial",
+        "category": "cctv",
+        "subCategory": "CCTV Coaxial Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 5500
+    },
+    {
+        "id": "cctv-cat-41",
+        "name": "China Cable 48 Jall Roll RJ59",
+        "brand": "China Coaxial",
+        "category": "cctv",
+        "subCategory": "CCTV Coaxial Cables",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 6800
+    },
+    {
+        "id": "cctv-cat-42",
+        "name": "SFP Module Pair",
+        "brand": "SFP",
+        "category": "cctv",
+        "subCategory": "Fiber Optics",
+        "dealer": "New japan electronic",
+        "unit": "Pair",
+        "defaultPrice": 3800
+    },
+    {
+        "id": "cctv-cat-43",
+        "name": "Dahua NVR 4 POT DHI-NVR1104HS-S3/H",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 14000
+    },
+    {
+        "id": "cctv-cat-44",
+        "name": "Hikvision NVR 8 POT DS-7608NI-Q1",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 19500
+    },
+    {
+        "id": "cctv-cat-45",
+        "name": "Samsung USB 8 GB",
+        "brand": "Samsung",
+        "category": "cctv",
+        "subCategory": "Storage / USB",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 850
+    },
+    {
+        "id": "cctv-cat-46",
+        "name": "Samsung USB 16 GB",
+        "brand": "Samsung",
+        "category": "cctv",
+        "subCategory": "Storage / USB",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 1150
+    },
+    {
+        "id": "cctv-cat-47",
+        "name": "Samsung USB 32 GB",
+        "brand": "Samsung",
+        "category": "cctv",
+        "subCategory": "Storage / USB",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 1450
+    },
+    {
+        "id": "cctv-cat-48",
+        "name": "Samsung USB 64 GB",
+        "brand": "Samsung",
+        "category": "cctv",
+        "subCategory": "Storage / USB",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 1950
+    },
+    {
+        "id": "cctv-cat-49",
+        "name": "UNV 8 Pot NVR 4k Metal Body",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "DVR / NVR",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 22500
+    },
+    {
+        "id": "cctv-cat-50",
+        "name": "UNV IP Camera IPC2124LB-SF40-A",
+        "brand": "UNV",
+        "category": "cctv",
+        "subCategory": "IP Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 6800
+    },
+    {
+        "id": "cctv-cat-51",
+        "name": "Dahua IP camera ECO DH-IPC-B1E49-A-IL",
+        "brand": "Dahua",
+        "category": "cctv",
+        "subCategory": "IP Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 7200
+    },
+    {
+        "id": "cctv-cat-52",
+        "name": "Hikvision Dual Light Bullet IP CameraDS-2CD1041G2-LIU",
+        "brand": "Hikvision",
+        "category": "cctv",
+        "subCategory": "IP Cameras",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 7500
+    },
+    {
+        "id": "cctv-cat-53",
+        "name": "Clipping Tool Green",
+        "brand": "Tools",
+        "category": "cctv",
+        "subCategory": "Tools & Accessories",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 1200
+    },
+    {
+        "id": "cctv-cat-54",
+        "name": "BNC Baloon",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Baluns & Connectors",
+        "dealer": "New japan electronic",
+        "unit": "Pair",
+        "defaultPrice": 650
+    },
+    {
+        "id": "cctv-cat-55",
+        "name": "4 POT USB Hub 3.0",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Accessories",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 1450
+    },
+    {
+        "id": "cctv-cat-56",
+        "name": "DP to HDMI",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Display Converters",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 750
+    },
+    {
+        "id": "cctv-cat-57",
+        "name": "POE Cable IP Camera",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "POE Cables",
+        "dealer": "New japan electronic",
+        "unit": "Pair",
+        "defaultPrice": 450
+    },
+    {
+        "id": "cctv-cat-58",
+        "name": "POE Baloon 8 MP cat 6",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Baluns & Connectors",
+        "dealer": "New japan electronic",
+        "unit": "Pair",
+        "defaultPrice": 1250
+    },
+    {
+        "id": "cctv-cat-59",
+        "name": "1 Ft Normal Metal Stand",
+        "brand": "Metal Stand",
+        "category": "cctv",
+        "subCategory": "Stands & Brackets",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 450
+    },
+    {
+        "id": "cctv-cat-60",
+        "name": "Tenda 5 POT 10/100 Mbps Desktop Switch S-105",
+        "brand": "Tenda",
+        "category": "cctv",
+        "subCategory": "Network Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 2400
+    },
+    {
+        "id": "cctv-cat-61",
+        "name": "Tenda 8 POT 10/100 Mbps Desktop Switch S-108",
+        "brand": "Tenda",
+        "category": "cctv",
+        "subCategory": "Network Switches",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 3400
+    },
+    {
+        "id": "cctv-cat-62",
+        "name": "Box 4*4",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Junction Boxes",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 220
+    },
+    {
+        "id": "cctv-cat-63",
+        "name": "Joint Box",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Junction Boxes",
+        "dealer": "New japan electronic",
+        "unit": "Pcs",
+        "defaultPrice": 280
+    },
+    {
+        "id": "cctv-cat-64",
+        "name": "LCD Stand 32 - 42 MHT",
+        "brand": "MHT",
+        "category": "cctv",
+        "subCategory": "Stands & Brackets",
+        "dealer": "New japan electronic",
+        "unit": "Set",
+        "defaultPrice": 1400
+    },
+    {
+        "id": "cctv-cat-65",
+        "name": "Tester Cat6",
+        "brand": "Tools",
+        "category": "cctv",
+        "subCategory": "Tools & Accessories",
+        "dealer": "New japan electronic",
+        "unit": "Unit",
+        "defaultPrice": 950
+    },
+    {
+        "id": "cctv-cat-66",
+        "name": "D-Link Cat6 UTP Network Cable (Per Meter)",
+        "brand": "D-Link",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Meter",
+        "defaultPrice": 45
+    },
+    {
+        "id": "cctv-cat-67",
+        "name": "D-Link Cat6 UTP Network Cable (Per Yard / Gaz)",
+        "brand": "D-Link",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Yard",
+        "defaultPrice": 50
+    },
+    {
+        "id": "cctv-cat-68",
+        "name": "D-Link Cat6 Pure Copper 305m Cable Roll",
+        "brand": "D-Link",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Roll",
+        "defaultPrice": 14500
+    },
+    {
+        "id": "cctv-cat-69",
+        "name": "RG59 Coaxial CCTV Video Cable + Power (Per Meter)",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Meter",
+        "defaultPrice": 55
+    },
+    {
+        "id": "cctv-cat-70",
+        "name": "RG59 Coaxial CCTV Video Cable + Power (Per Yard)",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Yard",
+        "defaultPrice": 60
+    },
+    {
+        "id": "cctv-cat-71",
+        "name": "2-Core DC Power Cable 23/76 (Per Meter)",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Meter",
+        "defaultPrice": 30
+    },
+    {
+        "id": "cctv-cat-72",
+        "name": "2-Core DC Power Cable 23/76 (Per Yard / Gaz)",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Yard",
+        "defaultPrice": 35
+    },
+    {
+        "id": "cctv-cat-73",
+        "name": "1-Core FTTH Fiber Optic Drop Cable (Per Meter)",
+        "brand": "Generic",
+        "category": "cctv",
+        "subCategory": "Cables & Wire",
+        "dealer": "New japan electronic",
+        "unit": "Meter",
+        "defaultPrice": 22
+    }
+]

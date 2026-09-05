@@ -1,0 +1,861 @@
+/* ==========================================================================
+   SMS POS — Admin Panel Application Engine
+   Pure JavaScript AJAX & State Controller
+   ========================================================================== */
+
+(function () {
+    'use strict';
+
+    // Global POS Cart State
+    window.POSState = {
+        products: [],
+        categories: [],
+        cart: [],
+        selectedCategory: 'all',
+        searchTerm: '',
+        discount: 0,
+        paymentMethod: 'cash',
+        customerName: '',
+        customerPhone: '',
+        amountReceived: 0,
+        completedSale: null
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        initPOSBilling();
+    });
+
+    // POS Billing System Controller
+    function initPOSBilling() {
+        const posArea = document.getElementById('posBillingArea');
+        if (!posArea) return;
+
+        loadPOSProducts();
+
+        // Bind Category Filters
+        document.querySelectorAll('.pos-cat-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.pos-cat-btn').forEach(function (b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                window.POSState.selectedCategory = this.getAttribute('data-category');
+                renderPOSProducts();
+            });
+        });
+
+        // Search Input
+        const searchInput = document.getElementById('posSearchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', function () {
+                window.POSState.searchTerm = this.value.trim().toLowerCase();
+                renderPOSProducts();
+            });
+        }
+
+        // Barcode Scanner Event Listener (Keyboard wedge listener)
+        let barcodeBuffer = '';
+        let lastKeyTime = Date.now();
+        document.addEventListener('keydown', function (e) {
+            if (document.activeElement.tagName === 'INPUT' && document.activeElement.id !== 'posSearchInput') {
+                return;
+            }
+
+            const now = Date.now();
+            if (now - lastKeyTime > 100) {
+                barcodeBuffer = '';
+            }
+            lastKeyTime = now;
+
+            if (e.key === 'Enter') {
+                if (barcodeBuffer.length > 3) {
+                    handleBarcodeScan(barcodeBuffer);
+                    barcodeBuffer = '';
+                }
+            } else if (e.key.length === 1) {
+                barcodeBuffer += e.key;
+            }
+        });
+
+        // Payment Method Selectors
+        document.querySelectorAll('.payment-opt').forEach(function (opt) {
+            opt.addEventListener('click', function () {
+                document.querySelectorAll('.payment-opt').forEach(function (o) { o.classList.remove('active'); });
+                this.classList.add('active');
+                window.POSState.paymentMethod = this.getAttribute('data-method');
+            });
+        });
+
+        // Discount Input
+        const discInput = document.getElementById('posDiscountInput');
+        if (discInput) {
+            discInput.addEventListener('input', function () {
+                window.POSState.discount = parseFloat(this.value) || 0;
+                updateCartTotals();
+            });
+        }
+
+        // Amount Received Input
+        const recInput = document.getElementById('posAmountReceivedInput');
+        if (recInput) {
+            recInput.addEventListener('input', function () {
+                window.POSState.amountReceived = parseFloat(this.value) || 0;
+                updateCartTotals();
+            });
+        }
+
+        // Complete Sale Button
+        const checkoutBtn = document.getElementById('completeSaleBtn');
+        if (checkoutBtn) {
+            checkoutBtn.addEventListener('click', processPOSCheckout);
+        }
+    }
+
+    // Load Products for POS
+    function loadPOSProducts() {
+        fetch('../backend/products.php?status=active')
+            .then(function (r) { return r.json(); })
+            .then(function (res) {
+                if (res && res.status === 'success') {
+                    window.POSState.products = res.data;
+                    renderPOSProducts();
+                }
+            });
+    }
+
+    function renderPOSProducts() {
+        const grid = document.getElementById('posProductGrid');
+        if (!grid) return;
+
+        let filtered = window.POSState.products;
+
+        if (window.POSState.selectedCategory !== 'all') {
+            const cat = window.POSState.selectedCategory;
+            filtered = filtered.filter(function (p) {
+                return p.category === cat || (p.categoryId ?? '') === cat;
+            });
+        }
+
+        if (window.POSState.searchTerm) {
+            const q = window.POSState.searchTerm;
+            filtered = filtered.filter(function (p) {
+                return (p.name && p.name.toLowerCase().includes(q)) ||
+                    (p.sku && p.sku.toLowerCase().includes(q)) ||
+                    (p.barcode && p.barcode.toLowerCase().includes(q));
+            });
+        }
+
+        if (filtered.length === 0) {
+            grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#9ca3af;"><i class="fa-solid fa-box-open" style="font-size:2rem; margin-bottom:8px;"></i><p>No products found</p></div>';
+            return;
+        }
+
+        grid.innerHTML = filtered.map(function (p) {
+            const outOfStock = p.stock <= 0 ? 'out-of-stock' : '';
+            const price = Number(p.sellingPrice || p.priceNumeric || 0).toLocaleString();
+
+            let imgUrl = p.image || '';
+            if (imgUrl && !imgUrl.startsWith('http://') && !imgUrl.startsWith('https://') && !imgUrl.startsWith('/') && !imgUrl.startsWith('../')) {
+                imgUrl = '../' + imgUrl;
+            }
+
+            return `
+                <div class="pos-product-tile ${outOfStock}" onclick="window.addToPOSCart('${p.id}')">
+                    <img src="${escapeHtml(imgUrl)}" class="pos-tile-img" onerror="this.src='https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop&q=80'">
+                    <div class="pos-tile-name">${escapeHtml(p.name)}</div>
+                    <div class="pos-tile-price">PKR ${price}</div>
+                    <div class="pos-tile-stock">${p.stock > 0 ? (p.stock + ' in stock') : 'OUT OF STOCK'}</div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    // Add to Cart
+    window.addToPOSCart = function (productId) {
+        const prod = window.POSState.products.find(function (p) { return p.id === productId; });
+        if (!prod) return;
+
+        if (prod.stock <= 0) {
+            alert('Product is out of stock!');
+            return;
+        }
+
+        const cartItem = window.POSState.cart.find(function (item) { return item.id === productId; });
+        if (cartItem) {
+            if (cartItem.qty >= prod.stock) {
+                alert('Cannot exceed available stock level (' + prod.stock + ')');
+                return;
+            }
+            cartItem.qty += 1;
+        } else {
+            window.POSState.cart.push({
+                id: prod.id,
+                name: prod.name,
+                sellingPrice: floatVal(prod.sellingPrice || prod.priceNumeric),
+                costPrice: floatVal(prod.costPrice),
+                stock: prod.stock,
+                qty: 1
+            });
+        }
+
+        renderCartItems();
+    };
+
+    window.updateCartItemQty = function (productId, delta) {
+        const cartItem = window.POSState.cart.find(function (item) { return item.id === productId; });
+        if (!cartItem) return;
+
+        const newQty = cartItem.qty + delta;
+        if (newQty <= 0) {
+            window.removeFromPOSCart(productId);
+            return;
+        }
+
+        if (newQty > cartItem.stock) {
+            alert('Cannot exceed available stock level (' + cartItem.stock + ')');
+            return;
+        }
+
+        cartItem.qty = newQty;
+        renderCartItems();
+    };
+
+    window.removeFromPOSCart = function (productId) {
+        window.POSState.cart = window.POSState.cart.filter(function (item) { return item.id !== productId; });
+        renderCartItems();
+    };
+
+    window.clearPOSCart = function () {
+        window.POSState.cart = [];
+        window.POSState.discount = 0;
+        window.POSState.amountReceived = 0;
+        document.getElementById('posDiscountInput').value = '';
+        document.getElementById('posAmountReceivedInput').value = '';
+        renderCartItems();
+    };
+
+    function renderCartItems() {
+        const container = document.getElementById('posCartItemsContainer');
+        if (!container) return;
+
+        if (window.POSState.cart.length === 0) {
+            container.innerHTML = '<div style="text-align:center; padding:40px 10px; color:#9ca3af;"><i class="fa-solid fa-cart-shopping" style="font-size:2rem; margin-bottom:8px;"></i><p>Cart is empty</p></div>';
+            updateCartTotals();
+            return;
+        }
+
+        container.innerHTML = window.POSState.cart.map(function (item) {
+            const lineTotal = item.sellingPrice * item.qty;
+            return `
+                <div class="cart-item">
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">${escapeHtml(item.name)}</div>
+                        <div class="cart-item-price">PKR ${item.sellingPrice.toLocaleString()}</div>
+                    </div>
+                    <div class="cart-qty-ctrl">
+                        <button class="cart-qty-btn" onclick="window.updateCartItemQty('${item.id}', -1)">-</button>
+                        <span class="cart-qty-num">${item.qty}</span>
+                        <button class="cart-qty-btn" onclick="window.updateCartItemQty('${item.id}', 1)">+</button>
+                    </div>
+                    <div class="cart-item-total">PKR ${lineTotal.toLocaleString()}</div>
+                    <div class="cart-item-remove" onclick="window.removeFromPOSCart('${item.id}')"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            `;
+        }).join('');
+
+        updateCartTotals();
+    }
+
+    function updateCartTotals() {
+        const subtotal = window.POSState.cart.reduce(function (acc, item) {
+            return acc + (item.sellingPrice * item.qty);
+        }, 0);
+
+        const disc = window.POSState.discount;
+        const discountAmt = disc > 0 ? (disc <= 100 ? (subtotal * disc / 100) : disc) : 0;
+        const total = Math.max(0, subtotal - discountAmt);
+        const change = window.POSState.amountReceived ? Math.max(0, window.POSState.amountReceived - total) : 0;
+
+        document.getElementById('posSubtotalDisplay').textContent = 'PKR ' + subtotal.toLocaleString();
+        document.getElementById('posDiscountDisplay').textContent = '-PKR ' + discountAmt.toLocaleString();
+        document.getElementById('posTotalDisplay').textContent = 'PKR ' + total.toLocaleString();
+        document.getElementById('posChangeDisplay').textContent = 'PKR ' + change.toLocaleString();
+
+        const btn = document.getElementById('completeSaleBtn');
+        if (btn) {
+            btn.disabled = window.POSState.cart.length === 0;
+        }
+    }
+
+    function handleBarcodeScan(barcode) {
+        const prod = window.POSState.products.find(function (p) {
+            return (p.barcode || '').trim() === barcode.trim() || (p.sku || '').trim() === barcode.trim();
+        });
+
+        if (prod) {
+            window.addToPOSCart(prod.id);
+        } else {
+            console.log('Barcode not found: ' + barcode);
+        }
+    }
+
+    // Process POS Checkout
+    function processPOSCheckout() {
+        if (window.POSState.cart.length === 0) return;
+
+        const customerName = document.getElementById('posCustomerNameInput')?.value || 'Walk-in Customer';
+        const customerPhone = document.getElementById('posCustomerPhoneInput')?.value || '';
+
+        const payload = {
+            items: window.POSState.cart,
+            discount: window.POSState.discount,
+            paymentMethod: window.POSState.paymentMethod,
+            customerName: customerName,
+            customerPhone: customerPhone,
+            amountReceived: window.POSState.amountReceived
+        };
+
+        fetch('../backend/sales.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+            .then(function (r) { return r.json(); })
+            .then(function (res) {
+                if (res && res.status === 'success') {
+                    window.POSState.completedSale = res.data;
+                    openReceiptModal(res.data);
+                    window.clearPOSCart();
+                    loadPOSProducts();
+                } else {
+                    alert(res.message || 'Transaction failed');
+                }
+            })
+            .catch(function (err) {
+                alert('Error completing sale: ' + err.message);
+            });
+    }
+
+    // Thermal Receipt Modal & Printing
+    function openReceiptModal(sale) {
+        const modal = document.getElementById('receiptModal');
+        if (!modal) return;
+
+        const itemsHtml = sale.items.map(function (item) {
+            return `
+                <tr>
+                    <td>${item.qty}x ${escapeHtml(item.name)}</td>
+                    <td style="text-align:right">PKR ${item.lineTotal.toLocaleString()}</td>
+                </tr>
+            `;
+        }).join('');
+
+        const content = `
+            <div class="receipt-preview" style="font-family:'Times New Roman', Times, serif;">
+                <div class="receipt-header">
+                    <img src="../assets/images/logo.jpg" alt="Safdar Mobile Store Logo" style="width:65px; height:auto; border-radius:50%; margin:0 auto 6px auto; display:block;">
+                    <div style="font-family:'Times New Roman', Times, serif; font-weight:bold; font-size:15px; margin-bottom:2px;">Safdar Mobile Store</div>
+                    <div style="font-family:'Times New Roman', Times, serif; font-size:10px; line-height:1.3;">Opposite Patt Bazar Eidgah Road near Purdil Masjid Syedano Banda Road Main Bazar Hangu</div>
+                    <div style="font-family:'Times New Roman', Times, serif; font-size:11px;">Ph: 03339688007</div>
+                </div>
+                <div class="receipt-divider"></div>
+                <div class="receipt-row"><span>Invoice #:</span> <strong>${sale.invoiceNo}</strong></div>
+                <div class="receipt-row"><span>Date:</span> <span>${new Date(sale.createdAt).toLocaleString()}</span></div>
+                <div class="receipt-row"><span>Customer:</span> <span>${escapeHtml(sale.customerName)}</span></div>
+                <div class="receipt-row"><span>Payment:</span> <span>${sale.paymentMethod.toUpperCase()}</span></div>
+                <div class="receipt-divider"></div>
+                <table class="receipt-items" style="width:100%; font-family:'Times New Roman', Times, serif;">
+                    <thead>
+                        <tr style="border-bottom:1px solid #000;">
+                            <th style="text-align:left; font-family:'Times New Roman', Times, serif;">Item</th>
+                            <th style="text-align:right; font-family:'Times New Roman', Times, serif;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${itemsHtml}
+                    </tbody>
+                </table>
+                <div class="receipt-divider"></div>
+                <div class="receipt-row"><span>Subtotal:</span> <span>PKR ${sale.subtotal.toLocaleString()}</span></div>
+                ${sale.discount > 0 ? `<div class="receipt-row"><span>Discount:</span> <span>-PKR ${sale.discount.toLocaleString()}</span></div>` : ''}
+                <div class="receipt-row receipt-total" style="font-size:15px; font-weight:bold;"><span>TOTAL:</span> <span>PKR ${sale.total.toLocaleString()}</span></div>
+                ${sale.amountReceived > 0 ? `<div class="receipt-row"><span>Received:</span> <span>PKR ${sale.amountReceived.toLocaleString()}</span></div>` : ''}
+                ${sale.change > 0 ? `<div class="receipt-row"><span>Change:</span> <span>PKR ${sale.change.toLocaleString()}</span></div>` : ''}
+                <div class="receipt-divider"></div>
+                <div class="receipt-footer" style="font-family:'Times New Roman', Times, serif; text-align:center;">
+                    <p style="margin-bottom:4px;">Thank you for shopping with Safdar Mobile Store!</p>
+                    <p style="font-weight:bold;">Software by Munim Abbas</p>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('receiptModalContainer').innerHTML = content;
+        modal.style.display = 'flex';
+    }
+
+    window.closeReceiptModal = function () {
+        const modal = document.getElementById('receiptModal');
+        if (modal) modal.style.display = 'none';
+    };
+
+    window.printReceipt = function () {
+        const container = document.getElementById('receiptModalContainer');
+        if (!container) {
+            window.print();
+            return;
+        }
+
+        const printFrame = document.createElement('iframe');
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        document.body.appendChild(printFrame);
+
+        const doc = printFrame.contentWindow.document;
+        doc.open();
+        doc.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Receipt Print</title>
+                <style>
+                    @page { size: 80mm auto; margin: 0mm; }
+                    html, body {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        width: 80mm !important;
+                        background: #ffffff !important;
+                        color: #000000 !important;
+                        font-family: 'Times New Roman', Times, serif !important;
+                    }
+                    .receipt-preview {
+                        width: 76mm !important;
+                        padding: 2mm !important;
+                        margin: 0 auto !important;
+                        font-size: 11pt !important;
+                        background: #ffffff !important;
+                        color: #000000 !important;
+                    }
+                    .receipt-header { text-align: center; margin-bottom: 8px; }
+                    .receipt-header img { width: 55px; height: auto; margin: 0 auto 4px auto; display: block; }
+                    .receipt-divider { border-bottom: 1px dashed #000; margin: 6px 0; }
+                    .receipt-row { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 3px; }
+                    .receipt-items { width: 100%; font-size: 11px; border-collapse: collapse; margin: 4px 0; }
+                    .receipt-items th, .receipt-items td { text-align: left; padding: 2px 0; }
+                    .receipt-total { font-size: 14px; font-weight: bold; }
+                    .receipt-footer { text-align: center; font-size: 10px; margin-top: 10px; }
+                </style>
+            </head>
+            <body>
+                ${container.innerHTML}
+            </body>
+            </html>
+        `);
+        doc.close();
+
+        setTimeout(function () {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            setTimeout(function () {
+                if (document.body.contains(printFrame)) {
+                    document.body.removeChild(printFrame);
+                }
+            }, 1000);
+        }, 250);
+    };
+
+    // Global Customer Bill Modal & Printable Invoice Engine
+    window.openCustomerBillModal = function (sale) {
+        if (!sale) return;
+
+        let modal = document.getElementById('customerBillModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'customerBillModal';
+            modal.className = 'pos-modal-overlay';
+            modal.style.zIndex = '10000';
+            modal.style.display = 'none';
+            modal.innerHTML = `
+                <div class="pos-modal" style="max-width:850px; width:95%; max-height:90vh; overflow-y:auto; background:#fff; padding:24px;">
+                    <div class="pos-modal-header no-print" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e2e8f0; padding-bottom:12px; margin-bottom:16px;">
+                        <h3 class="pos-modal-title" style="margin:0; font-family:var(--pos-font-heading); color:var(--pos-red);">
+                            <i class="fa-solid fa-file-invoice-dollar"></i> Official Customer Bill & Invoice Preview
+                        </h3>
+                        <button class="pos-modal-close" onclick="window.closeCustomerBillModal()" style="background:none; border:none; font-size:1.2rem; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div id="customerBillModalContent"></div>
+                    <div class="form-actions no-print" style="display:flex; justify-content:flex-end; gap:12px; margin-top:20px; border-top:1px solid #e2e8f0; padding-top:16px;">
+                        <button class="pos-btn pos-btn-outline" onclick="window.closeCustomerBillModal()">Close Window</button>
+                        <button class="pos-btn pos-btn-primary" onclick="window.printCustomerBillModal()">
+                            <i class="fa-solid fa-print"></i> Print Official Customer Bill
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        const itemsRows = (sale.items || []).map(function (item, idx) {
+            const selling = floatVal(item.sellingPrice || item.price);
+            const lineTotal = floatVal(item.lineTotal || (selling * item.qty));
+            return `
+                <tr style="border-bottom:1px solid #e2e8f0;">
+                    <td style="padding:10px 12px; text-align:center; font-weight:700; color:#64748b;">${idx + 1}</td>
+                    <td style="padding:10px 12px; font-weight:700; color:#1e293b;">${escapeHtml(item.name)}</td>
+                    <td style="padding:10px 12px; text-align:right; color:#475569;">PKR ${selling.toLocaleString()}</td>
+                    <td style="padding:10px 12px; text-align:center; font-weight:800; color:#0f172a;">${item.qty}</td>
+                    <td style="padding:10px 12px; text-align:right; font-weight:800; color:#1e293b;">PKR ${lineTotal.toLocaleString()}</td>
+                </tr>
+            `;
+        }).join('');
+
+        const subtotal = floatVal(sale.subtotal || sale.total);
+        const discount = floatVal(sale.discount || 0);
+        const total = floatVal(sale.total);
+        const amountReceived = floatVal(sale.amountReceived || total);
+        const change = floatVal(sale.change || Math.max(0, amountReceived - total));
+
+        const logoUrl = '../assets/images/logo.jpg';
+
+        const billHtml = `
+            <div class="customer-bill-wrap" style="background:#ffffff; color:#0f172a; font-family:'Inter', system-ui, sans-serif; padding:10px;">
+                <!-- Header with Official Logo -->
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3.5px solid #D71920; padding-bottom:14px; margin-bottom:18px;">
+                    <div style="display:flex; align-items:center; gap:16px;">
+                        <img src="${logoUrl}" alt="Safdar Mobile Store Logo" style="width:78px; height:78px; border-radius:50%; border:2px solid #F4C430; box-shadow:0 4px 12px rgba(215,25,32,0.25); object-fit:cover;" onerror="this.style.display='none'">
+                        <div>
+                            <h1 style="font-family:'Outfit', sans-serif; font-size:1.65rem; font-weight:900; color:#D71920; margin:0; line-height:1.1; letter-spacing:-0.5px;">SAFDAR MOBILE STORE</h1>
+                            <div style="font-size:0.82rem; font-weight:800; color:#334155; margin-top:3px;">Mobiles, Accessories, CCTV Security & Digital Kiosk Services</div>
+                            <div style="font-size:0.76rem; color:#64748b; margin-top:2px;">Opposite Patt Bazar Eidgah Road near Purdil Masjid Syedano Banda Road Main Bazar Hangu</div>
+                            <div style="font-size:0.76rem; font-weight:700; color:#0f172a; margin-top:2px;">Phone / WhatsApp: <strong style="color:#D71920;">03339688007</strong> | Email: info@safdarmobile.com</div>
+                        </div>
+                    </div>
+                    <div style="text-align:right; background:#fff5f5; padding:12px 18px; border-radius:10px; border:1.5px solid #fecaca; min-width:170px;">
+                        <div style="font-family:'Outfit', sans-serif; font-size:1.15rem; font-weight:900; color:#D71920; text-transform:uppercase; letter-spacing:0.5px;">CUSTOMER BILL</div>
+                        <div style="font-size:0.85rem; font-weight:800; color:#0f172a; margin-top:3px;"># ${escapeHtml(sale.invoiceNo)}</div>
+                        <div style="font-size:0.74rem; color:#64748b; margin-top:2px;">${new Date(sale.createdAt || Date.now()).toLocaleString()}</div>
+                    </div>
+                </div>
+
+                <!-- Customer Details & Payment Banner -->
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; background:#f8fafc; padding:14px 18px; border-radius:10px; border:1px solid #e2e8f0; margin-bottom:20px; font-size:0.85rem;">
+                    <div>
+                        <div style="font-size:0.72rem; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">CUSTOMER DETAILS</div>
+                        <div style="font-size:1rem; font-weight:800; color:#0f172a;">${escapeHtml(sale.customerName || 'Walk-in Customer')}</div>
+                        <div style="color:#475569; margin-top:2px;">Contact Phone: ${escapeHtml(sale.customerPhone || 'N/A')}</div>
+                        <div style="color:#475569;">Location: Main Bazar Commercial Market, Hangu</div>
+                    </div>
+                    <div style="text-align:right;">
+                        <div style="font-size:0.72rem; font-weight:800; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">BILLING INFORMATION</div>
+                        <div>Payment Method: <strong style="color:#059669;">${(sale.paymentMethod || 'cash').toUpperCase()}</strong></div>
+                        <div>Billed By: <strong>${escapeHtml(sale.cashier || 'admin')}</strong></div>
+                        <div style="margin-top:4px;"><span style="background:#dcfce7; color:#15803d; padding:3px 10px; border-radius:12px; font-weight:800; font-size:0.72rem;">PAID IN FULL</span></div>
+                    </div>
+                </div>
+
+                <!-- Itemized Products Table -->
+                <table style="width:100%; border-collapse:collapse; margin-bottom:20px; font-size:0.88rem;">
+                    <thead>
+                        <tr style="background:#0f172a; color:#ffffff;">
+                            <th style="padding:10px 12px; text-align:center; width:50px; border-radius:6px 0 0 0;">#</th>
+                            <th style="padding:10px 12px; text-align:left;">Item / Product Description</th>
+                            <th style="padding:10px 12px; text-align:right; width:130px;">Rate (PKR)</th>
+                            <th style="padding:10px 12px; text-align:center; width:70px;">Qty</th>
+                            <th style="padding:10px 12px; text-align:right; width:140px; border-radius:0 6px 0 0;">Total (PKR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${itemsRows}
+                    </tbody>
+                </table>
+
+                <!-- Summary & Terms Footer -->
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:20px; margin-bottom:24px;">
+                    <div style="flex:1; background:#fffdf5; border:1px solid #fde68a; padding:14px; border-radius:10px;">
+                        <div style="font-size:0.8rem; font-weight:800; color:#92400e; margin-bottom:4px;">
+                            <i class="fa-solid fa-circle-info"></i> Terms & Warranty Conditions:
+                        </div>
+                        <ul style="font-size:0.75rem; color:#78350f; margin:0; padding-left:16px; line-height:1.4;">
+                            <li>Mobile smartphones & accessories carry official brand warranty as per manufacturer policy.</li>
+                            <li>Please keep this original Customer Bill safe for any warranty or replacement requests.</li>
+                            <li>Thank you for shopping at Safdar Mobile Store! Contact 03339688007 for any support.</li>
+                        </ul>
+                    </div>
+
+                    <div style="width:280px; background:#f8fafc; border:1.5px solid #cbd5e1; border-radius:10px; padding:14px; font-size:0.88rem;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:6px; color:#475569;">
+                            <span>Subtotal:</span>
+                            <strong>PKR ${subtotal.toLocaleString()}</strong>
+                        </div>
+                        ${discount > 0 ? `
+                        <div style="display:flex; justify-content:space-between; margin-bottom:6px; color:#dc2626;">
+                            <span>Discount:</span>
+                            <strong>-PKR ${discount.toLocaleString()}</strong>
+                        </div>` : ''}
+                        <div style="display:flex; justify-content:space-between; border-top:2px solid #0f172a; padding-top:8px; margin-top:8px; font-size:1.15rem; font-weight:900; color:#D71920;">
+                            <span>GRAND TOTAL:</span>
+                            <span>PKR ${total.toLocaleString()}</span>
+                        </div>
+                        ${amountReceived > 0 ? `
+                        <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:0.82rem; color:#475569;">
+                            <span>Amount Received:</span>
+                            <span>PKR ${amountReceived.toLocaleString()}</span>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; margin-top:2px; font-size:0.82rem; color:#059669; font-weight:700;">
+                            <span>Change Returned:</span>
+                            <span>PKR ${change.toLocaleString()}</span>
+                        </div>` : ''}
+                    </div>
+                </div>
+
+                <!-- Signatures & Stamp Lines -->
+                <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-top:35px; padding-top:16px; border-top:1px dashed #cbd5e1; font-size:0.78rem; color:#64748b;">
+                    <div style="text-align:center; width:180px;">
+                        <div style="height:30px;"></div>
+                        <div style="border-top:1px solid #94a3b8; padding-top:4px; font-weight:700;">Customer Signature</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-weight:800; color:#D71920; font-size:0.85rem;">SAFDAR MOBILE STORE</div>
+                        <div style="font-size:0.7rem; color:#94a3b8;">Software System by Munim Abbas</div>
+                    </div>
+                    <div style="text-align:center; width:180px;">
+                        <div style="height:30px;"></div>
+                        <div style="border-top:1px solid #94a3b8; padding-top:4px; font-weight:700;">Authorized Stamp & Seal</div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('customerBillModalContent').innerHTML = billHtml;
+        modal.style.display = 'flex';
+    };
+
+    window.closeCustomerBillModal = function () {
+        const modal = document.getElementById('customerBillModal');
+        if (modal) modal.style.display = 'none';
+    };
+
+    window.printCustomerBillModal = function () {
+        const content = document.getElementById('customerBillModalContent');
+        if (!content) return;
+
+        const printFrame = document.createElement('iframe');
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        document.body.appendChild(printFrame);
+
+        const doc = printFrame.contentWindow.document;
+        doc.open();
+        doc.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Customer Bill - Safdar Mobile Store</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                <style>
+                    @page { size: A4 portrait; margin: 10mm 12mm; }
+                    html, body { background: #ffffff !important; color: #0f172a !important; font-family: 'Inter', system-ui, sans-serif !important; margin:0; padding:0; }
+                    * { box-sizing: border-box; }
+                </style>
+            </head>
+            <body>
+                ${content.innerHTML}
+            </body>
+            </html>
+        `);
+        doc.close();
+
+        setTimeout(function () {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            setTimeout(function () {
+                if (document.body.contains(printFrame)) {
+                    document.body.removeChild(printFrame);
+                }
+            }, 1000);
+        }, 250);
+    };
+
+    window.viewInvoice = function (saleId) {
+        fetch('../backend/sales.php?id=' + saleId)
+            .then(function(r) { return r.json(); })
+            .then(function(res) {
+                if (res && res.status === 'success') {
+                    window.openCustomerBillModal(res.data);
+                } else {
+                    alert('Sale details not found!');
+                }
+            })
+            .catch(function(err) {
+                alert('Error loading invoice: ' + err.message);
+            });
+    };
+
+    // Topbar Notification Bell Toggle
+    window.toggleNotifDropdown = function () {
+        const menu = document.getElementById('notifDropdownMenu');
+        if (!menu) return;
+        menu.style.display = (menu.style.display === 'none' || !menu.style.display) ? 'block' : 'none';
+    };
+
+    document.addEventListener('click', function (e) {
+        const wrapper = document.querySelector('.notif-wrapper');
+        const menu = document.getElementById('notifDropdownMenu');
+        if (wrapper && menu && !wrapper.contains(e.target)) {
+            menu.style.display = 'none';
+        }
+    });
+
+    // Real-Time Notification & Sound Engine
+    let lastNotifTimestamp = null;
+    let notifAudioContext = null;
+
+    function playPOSChime() {
+        try {
+            if (!notifAudioContext) {
+                notifAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (notifAudioContext.state === 'suspended') {
+                notifAudioContext.resume();
+            }
+            const osc = notifAudioContext.createOscillator();
+            const gain = notifAudioContext.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(587.33, notifAudioContext.currentTime); // D5
+            osc.frequency.setValueAtTime(880, notifAudioContext.currentTime + 0.12); // A5
+            gain.gain.setValueAtTime(0.15, notifAudioContext.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.0001, notifAudioContext.currentTime + 0.45);
+            osc.connect(gain);
+            gain.connect(notifAudioContext.destination);
+            osc.start();
+            osc.stop(notifAudioContext.currentTime + 0.45);
+        } catch (e) {
+            console.warn('Audio chime failed:', e);
+        }
+    }
+
+    function showPOSToastNotification(title, message, type) {
+        let container = document.getElementById('posToastContainer');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'posToastContainer';
+            container.style.cssText = 'position:fixed; top:20px; right:20px; z-index:99999; display:flex; flex-direction:column; gap:10px; max-width:380px; width:90%; pointer-events:none;';
+            document.body.appendChild(container);
+        }
+
+        const toast = document.createElement('div');
+        const bgColor = type === 'payment' ? '#065f46' : (type === 'sale' ? '#1e1b4b' : '#7f1d1d');
+        const borderColor = type === 'payment' ? '#10b981' : (type === 'sale' ? '#6366f1' : '#f43f5e');
+
+        toast.style.cssText = `background:${bgColor}; border:1px solid ${borderColor}; color:#ffffff; padding:14px 18px; border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,0.6); pointer-events:auto; font-family:var(--pos-font-main); transition:all 0.3s ease; transform:translateY(-20px); opacity:0;`;
+        toast.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+                <div style="flex:1;">
+                    <div style="font-weight:800; font-size:0.92rem; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        ${escapeHtml(title)}
+                    </div>
+                    <div style="font-size:0.8rem; color:#e2e8f0; line-height:1.3;">
+                        ${escapeHtml(message)}
+                    </div>
+                </div>
+                <button onclick="this.parentElement.parentElement.remove()" style="background:none; border:none; color:#94a3b8; cursor:pointer; font-size:1rem; padding:0; line-height:1;">&times;</button>
+            </div>
+        `;
+
+        container.appendChild(toast);
+        setTimeout(function () {
+            toast.style.transform = 'translateY(0)';
+            toast.style.opacity = '1';
+        }, 50);
+
+        playPOSChime();
+
+        setTimeout(function () {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateY(-10px)';
+            setTimeout(function () { toast.remove(); }, 350);
+        }, 6000);
+    }
+
+    function checkRealtimeNotifications() {
+        let url = '../backend/notifications.php';
+        if (lastNotifTimestamp) {
+            url += '?since=' + encodeURIComponent(lastNotifTimestamp);
+        }
+
+        fetch(url)
+            .then(function (r) { return r.json(); })
+            .then(function (res) {
+                if (res && res.status === 'success') {
+                    const data = res.data;
+
+                    if (data.serverTime) {
+                        if (!lastNotifTimestamp) {
+                            lastNotifTimestamp = data.serverTime;
+                        }
+                    }
+
+                    // Update Topbar badge count
+                    const badge = document.getElementById('topbarNotifBadge');
+                    const bellBtn = document.getElementById('notifBellBtn');
+                    const totalAlerts = (data.unreadCount || 0) + (data.lowStockCount || 0);
+
+                    if (badge) {
+                        if (totalAlerts > 0) {
+                            badge.innerText = totalAlerts;
+                            badge.style.display = 'inline-block';
+                        } else {
+                            badge.style.display = 'none';
+                        }
+                    } else if (bellBtn && totalAlerts > 0) {
+                        const newBadge = document.createElement('span');
+                        newBadge.id = 'topbarNotifBadge';
+                        newBadge.style.cssText = 'position:absolute; top:-5px; right:-5px; background:#ef4444; color:#fff; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:10px; border:2px solid #1e293b;';
+                        newBadge.innerText = totalAlerts;
+                        bellBtn.appendChild(newBadge);
+                    }
+
+                    // Popup toasts for new unread notifications
+                    if (data.notifications && data.notifications.length > 0) {
+                        data.notifications.forEach(function (n) {
+                            if (lastNotifTimestamp && new Date(n.timestamp) > new Date(lastNotifTimestamp)) {
+                                showPOSToastNotification(n.title, n.message, n.type);
+                            }
+                        });
+                        lastNotifTimestamp = data.serverTime;
+                    }
+                }
+            })
+            .catch(function (e) {
+                console.warn('Failed notification check:', e);
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        checkRealtimeNotifications();
+        setInterval(checkRealtimeNotifications, 5000);
+    });
+
+    // Utilities
+    function floatVal(val) {
+        return parseFloat(val) || 0;
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+})();
+
+
+

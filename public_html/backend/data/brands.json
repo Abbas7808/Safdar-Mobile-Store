@@ -1,0 +1,44 @@
+[
+    {
+        "id": "apple",
+        "name": "Apple",
+        "category": "mobiles",
+        "status": "active"
+    },
+    {
+        "id": "dahua",
+        "name": "Dahua",
+        "category": "cctv",
+        "status": "active"
+    },
+    {
+        "id": "hikvision",
+        "name": "Hikvision",
+        "category": "cctv",
+        "status": "active"
+    },
+    {
+        "id": "infinix",
+        "name": "Infinix",
+        "category": "mobiles",
+        "status": "active"
+    },
+    {
+        "id": "realme",
+        "name": "Realme",
+        "category": "mobiles",
+        "status": "active"
+    },
+    {
+        "id": "samsung",
+        "name": "Samsung",
+        "category": "mobiles",
+        "status": "active"
+    },
+    {
+        "id": "tecno",
+        "name": "Tecno",
+        "category": "mobiles",
+        "status": "active"
+    }
+]

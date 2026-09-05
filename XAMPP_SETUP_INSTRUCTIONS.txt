@@ -1,0 +1,66 @@
+========================================================================
+   SAFDAR MOBILE STORE (SMS) - QUICK XAMPP SETUP FOR ANOTHER LAPTOP
+========================================================================
+
+Follow these 4 simple steps to run the updated website & POS locally:
+
+STEP 1: INSTALL XAMPP
+---------------------
+Download and install XAMPP for Windows (with PHP 8.1 or 8.2+) from:
+https://www.apachefriends.org/download.html
+(Default install path is: C:\xampp)
+
+
+STEP 2: COPY THIS FOLDER
+------------------------
+Copy this entire 'sms' folder and paste it into:
+C:\xampp\htdocs\sms\
+
+
+STEP 3: 1-CLICK DATABASE SETUP
+------------------------------
+Go inside C:\xampp\htdocs\sms\ and double-click:
+--> 1_SETUP_DATABASE.bat
+
+This will:
+- Start Apache and MySQL services automatically.
+- Create the MySQL database 'u423425124_SMS'.
+- Import all 33 products, 15 sales invoices, and settings.
+- Sync the JSON dual-engine store.
+
+
+STEP 4: LAUNCH WEBSITE & POS
+----------------------------
+Double-click:
+--> 2_LAUNCH_WEBSITE_AND_POS.bat
+
+Or open your browser to:
+- Customer Storefront : http://localhost/sms/
+- Admin & POS Portal  : http://localhost/sms/secure-portal.php
+- phpMyAdmin Database : http://localhost/phpmyadmin/
+
+
+LOGIN CREDENTIALS:
+------------------
+Super Admin:
+  Username: admin  (or admin@admin.com)
+  Password: smz1234  (or SafdarAdmin@2026!)
+
+Salesman POS:
+  Username: salesman  (or salesman@salesman.com)
+  Password: sale1234  (or SalesmanPos#2026!)
+
+
+HANDY LAUNCHERS:
+----------------
+- OPEN_STOREFRONT.bat   --> Directly opens the storefront in browser
+- OPEN_ADMIN_POS.bat    --> Directly opens the POS login in browser
+
+
+DUAL-ENGINE FALLBACK:
+---------------------
+Even if MySQL is stopped or not configured, the website will
+automatically run using the JSON database engine (backend/data/)
+with zero crashes.
+
+========================================================================

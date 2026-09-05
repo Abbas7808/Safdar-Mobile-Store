@@ -1,0 +1,192 @@
+[
+    {
+        "id": "notif-1787994694-201",
+        "type": "sale",
+        "title": "🛒 New POS Sale Completed",
+        "message": "Invoice #INV-20260829-0016 generated for Walk-in Customer (PKR 9,000) via CASH",
+        "amount": 9000,
+        "customer": "Walk-in Customer",
+        "timestamp": "2026-08-29T11:11:34+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787993502-703",
+        "type": "service",
+        "title": "📹 New CCTV Project Recorded",
+        "message": "Project #CCTV-20260829-002 recorded for khyalmat Khan (Dahua 4 Cams, PKR 5,000)",
+        "amount": 5000,
+        "customer": "khyalmat Khan",
+        "timestamp": "2026-08-29T10:51:42+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787991258-331",
+        "type": "service",
+        "title": "📹 New CCTV Project Recorded",
+        "message": "Project #CCTV-20260829-001 recorded for Munim Abbas (Hikvision 2 Cams, PKR 52,000)",
+        "amount": 52000,
+        "customer": "Munim Abbas",
+        "timestamp": "2026-08-29T10:14:18+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787990637-488",
+        "type": "service",
+        "title": "🗑️ CCTV Project Deleted",
+        "message": "CCTV #CCTV-20260829-001 for Munim Abbas was deleted by Super Admin admin@admin.com (Reason: Administrative cleanup)",
+        "amount": 0,
+        "customer": "Munim Abbas",
+        "timestamp": "2026-08-29T10:03:57+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787989036-710",
+        "type": "service",
+        "title": "📹 New CCTV Project Recorded",
+        "message": "Project #CCTV-20260829-001 recorded for Munim Abbas (Hikvision 4 Cams, PKR 0)",
+        "amount": 0,
+        "customer": "Munim Abbas",
+        "timestamp": "2026-08-29T09:37:16+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787986670-907",
+        "type": "service",
+        "title": "🗑️ CCTV Project Deleted",
+        "message": "CCTV #CCTV-20260819-003 for Malik Usman Khattak was deleted by Super Admin admin@admin.com (Reason: Administrative cleanup)",
+        "amount": 18000,
+        "customer": "Malik Usman Khattak",
+        "timestamp": "2026-08-29T08:57:50+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787986664-385",
+        "type": "service",
+        "title": "🗑️ CCTV Project Deleted",
+        "message": "CCTV #CCTV-20260818-002 for Dr. Farooq Ahmad was deleted by Super Admin admin@admin.com (Reason: Administrative cleanup)",
+        "amount": 33000,
+        "customer": "Dr. Farooq Ahmad",
+        "timestamp": "2026-08-29T08:57:44+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787986658-655",
+        "type": "service",
+        "title": "🗑️ CCTV Project Deleted",
+        "message": "CCTV #CCTV-20260815-001 for Haji Gulzar Khan was deleted by Super Admin admin@admin.com (Reason: Administrative cleanup)",
+        "amount": 60000,
+        "customer": "Haji Gulzar Khan",
+        "timestamp": "2026-08-29T08:57:38+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787986652-696",
+        "type": "service",
+        "title": "🗑️ CCTV Project Deleted",
+        "message": "CCTV #CCTV-20260820-004 for Al-Haram Fabrics Hangu was deleted by Super Admin admin@admin.com (Reason: Administrative cleanup)",
+        "amount": 67000,
+        "customer": "Al-Haram Fabrics Hangu",
+        "timestamp": "2026-08-29T08:57:32+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787205842-728",
+        "type": "service",
+        "title": "📹 New CCTV Project Recorded",
+        "message": "Project #CCTV-20260820-004 recorded for Al-Haram Fabrics Hangu (Hikvision 8 Cams, PKR 67,000)",
+        "amount": 67000,
+        "customer": "Al-Haram Fabrics Hangu",
+        "timestamp": "2026-08-20T08:04:02+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787205546-628",
+        "type": "sale",
+        "title": "🛒 New POS Sale Completed",
+        "message": "Invoice #INV-20260820-0010 generated for Audit Test Customer Bilawal (PKR 10,300) via EASYPAISA",
+        "amount": 10300,
+        "customer": "Audit Test Customer Bilawal",
+        "timestamp": "2026-08-20T07:59:06+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787205545-647",
+        "type": "sale",
+        "title": "🔄 Sale Invoice Returned \/ Refunded",
+        "message": "Invoice #INV-20260820-0009 (PKR 3,800) was refunded by admin@admin.com (Reason: Customer defective test exchange)",
+        "amount": 3800,
+        "customer": "Audit Test Customer Tariq",
+        "timestamp": "2026-08-20T07:59:05+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787205545-706",
+        "type": "sale",
+        "title": "🛒 New POS Sale Completed",
+        "message": "Invoice #INV-20260820-0009 generated for Audit Test Customer Tariq (PKR 3,800) via CASH",
+        "amount": 3800,
+        "customer": "Audit Test Customer Tariq",
+        "timestamp": "2026-08-20T07:59:05+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787204324-121",
+        "type": "sale",
+        "title": "🛍️ New Sale Completed!",
+        "message": "Invoice #INV-20260820-0008 for ALI (PKR 10,400) via CASH",
+        "amount": 10400,
+        "customer": "ALI",
+        "timestamp": "2026-08-20T07:38:44+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787204273-930",
+        "type": "sale",
+        "title": "🛍️ New Sale Completed!",
+        "message": "Invoice #INV-20260820-0007 for Walk-in Customer (PKR 9,800) via CASH",
+        "amount": 9800,
+        "customer": "Walk-in Customer",
+        "timestamp": "2026-08-20T07:37:53+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787204036-425",
+        "type": "payment",
+        "title": "💳 Financial Service Recorded",
+        "message": "easypaisa cash_out of PKR 5,000 for Zubair Khan (Commission: +PKR 150)",
+        "amount": 5000,
+        "customer": "Zubair Khan",
+        "timestamp": "2026-08-20T07:33:56+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787204036-759",
+        "type": "sale",
+        "title": "🔄 Sale Invoice Returned \/ Refunded",
+        "message": "Invoice #INV-20260820-0007 (PKR 3,500) was marked as Refunded by admin@admin.com",
+        "amount": 3500,
+        "customer": "Test Customer Ali",
+        "timestamp": "2026-08-20T07:33:56+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1787204036-847",
+        "type": "sale",
+        "title": "🛍️ New Sale Completed!",
+        "message": "Invoice #INV-20260820-0007 for Test Customer Ali (PKR 3,500) via EASYPAISA",
+        "amount": 3500,
+        "customer": "Test Customer Ali",
+        "timestamp": "2026-08-20T07:33:56+02:00",
+        "read": false
+    },
+    {
+        "id": "notif-1786949291-602",
+        "type": "sale",
+        "title": "🛍️ New Sale Completed!",
+        "message": "Invoice #INV-20260817-0001 for Walk-in Customer (PKR 700) via EASYPAISA",
+        "amount": 700,
+        "customer": "Walk-in Customer",
+        "timestamp": "2026-08-17T06:48:11+00:00",
+        "read": false
+    }
+]

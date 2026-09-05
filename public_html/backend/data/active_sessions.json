@@ -1,0 +1,272 @@
+{
+    "6k6tc3mkm8udb64ff56vqkng7t": {
+        "sessionId": "6k6tc3mkm8udb64ff56vqkng7t",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "182.185.113.187",
+        "userAgent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Mobile Sa",
+        "loginAt": "2026-08-16T15:36:38+00:00",
+        "lastActive": 1786894598
+    },
+    "mkjmtpk8imus353pm59d6mvqav": {
+        "sessionId": "mkjmtpk8imus353pm59d6mvqav",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "182.185.113.187",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-16T15:56:34+00:00",
+        "lastActive": 1786895794
+    },
+    "r75c6jja7pdd12tdj3v460q0bu": {
+        "sessionId": "r75c6jja7pdd12tdj3v460q0bu",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.175",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-17T03:46:02+00:00",
+        "lastActive": 1786938362
+    },
+    "oqpsg7b96m4cs5g6sva9fosjlm": {
+        "sessionId": "oqpsg7b96m4cs5g6sva9fosjlm",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.174",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-17T08:30:35+00:00",
+        "lastActive": 1786955435
+    },
+    "erverrgnomnp5jnc65t0aiqp5h": {
+        "sessionId": "erverrgnomnp5jnc65t0aiqp5h",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.175",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-17T09:52:37+00:00",
+        "lastActive": 1786960357
+    },
+    "13nl87m3v59h87fffp854jfhqu": {
+        "sessionId": "13nl87m3v59h87fffp854jfhqu",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.174",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-17T10:55:26+00:00",
+        "lastActive": 1786964126
+    },
+    "2g2dth6ne1ui5c57doerb32ljk": {
+        "sessionId": "2g2dth6ne1ui5c57doerb32ljk",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.175",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-18T04:48:24+00:00",
+        "lastActive": 1787028504
+    },
+    "52gp71gfh3fav9ghm4vut6v8ts": {
+        "sessionId": "52gp71gfh3fav9ghm4vut6v8ts",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.175",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-18T08:22:25+00:00",
+        "lastActive": 1787041345
+    },
+    "dnkbme96qj2pje8mtk9is3umr0": {
+        "sessionId": "dnkbme96qj2pje8mtk9is3umr0",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.173",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-18T12:01:35+00:00",
+        "lastActive": 1787054495
+    },
+    "8bkcvidab2q4b29oc40o57mcvu": {
+        "sessionId": "8bkcvidab2q4b29oc40o57mcvu",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.173",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-18T13:37:36+00:00",
+        "lastActive": 1787060256
+    },
+    "ueg6roimfod321ugg8phv8fsf5": {
+        "sessionId": "ueg6roimfod321ugg8phv8fsf5",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.174",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-19T04:24:35+00:00",
+        "lastActive": 1787113475
+    },
+    "hssstvmktq3bvb5g8ccvgve7dc": {
+        "sessionId": "hssstvmktq3bvb5g8ccvgve7dc",
+        "userId": "user-001",
+        "username": "user@user.com",
+        "role": "super_admin",
+        "ip": "123.253.95.174",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-19T06:02:27+00:00",
+        "lastActive": 1787119347
+    },
+    "6tkn66kacc40ksp9mqn86au5m0": {
+        "sessionId": "6tkn66kacc40ksp9mqn86au5m0",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:21:25+02:00",
+        "lastActive": 1787203285
+    },
+    "rive2gs28ao7f2e3se47ts174d": {
+        "sessionId": "rive2gs28ao7f2e3se47ts174d",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:21:27+02:00",
+        "lastActive": 1787203287
+    },
+    "5t2b1487if9i4icjmsrl0upvdg": {
+        "sessionId": "5t2b1487if9i4icjmsrl0upvdg",
+        "userId": "user-002",
+        "username": "Salesman@Salesman.com",
+        "role": "salesman",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:21:28+02:00",
+        "lastActive": 1787203288
+    },
+    "jspu7vpn3jo95lsutjpmv17s1s": {
+        "sessionId": "jspu7vpn3jo95lsutjpmv17s1s",
+        "userId": "user-002",
+        "username": "Salesman@Salesman.com",
+        "role": "salesman",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:21:29+02:00",
+        "lastActive": 1787203289
+    },
+    "vi5aedmdinepo5ik1blcuha55n": {
+        "sessionId": "vi5aedmdinepo5ik1blcuha55n",
+        "userId": "user-002",
+        "username": "Salesman@Salesman.com",
+        "role": "salesman",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:21:29+02:00",
+        "lastActive": 1787203289
+    },
+    "rrk2c3kkm5i0h1r4c2hvtgqm14": {
+        "sessionId": "rrk2c3kkm5i0h1r4c2hvtgqm14",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-20T07:25:27+02:00",
+        "lastActive": 1787203527
+    },
+    "djh79cm3n8fdea8fjgd23orrqu": {
+        "sessionId": "djh79cm3n8fdea8fjgd23orrqu",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:33:55+02:00",
+        "lastActive": 1787204035
+    },
+    "att3du9l1atam4nk3bkul3u7c8": {
+        "sessionId": "att3du9l1atam4nk3bkul3u7c8",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:41:43+02:00",
+        "lastActive": 1787204503
+    },
+    "ueigpt8bskfp72gfqe4sq1iqoj": {
+        "sessionId": "ueigpt8bskfp72gfqe4sq1iqoj",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-20T07:55:46+02:00",
+        "lastActive": 1787205346
+    },
+    "955qcnlnvbjlaemdh9ahfm2k2r": {
+        "sessionId": "955qcnlnvbjlaemdh9ahfm2k2r",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T07:59:05+02:00",
+        "lastActive": 1787205545
+    },
+    "a859egrdtvca23qffvfh3og3ha": {
+        "sessionId": "a859egrdtvca23qffvfh3og3ha",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T08:04:02+02:00",
+        "lastActive": 1787205842
+    },
+    "rhd38bd8e8cabmdsmumcq2p695": {
+        "sessionId": "rhd38bd8e8cabmdsmumcq2p695",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T08:16:10+02:00",
+        "lastActive": 1787206570
+    },
+    "11n5m90ag9d2m59lg3sgpur5q4": {
+        "sessionId": "11n5m90ag9d2m59lg3sgpur5q4",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "",
+        "loginAt": "2026-08-20T08:28:28+02:00",
+        "lastActive": 1787207308
+    },
+    "1rt3ubsp099itkchvft7hl5gkp": {
+        "sessionId": "1rt3ubsp099itkchvft7hl5gkp",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-29T08:41:18+02:00",
+        "lastActive": 1787985678
+    },
+    "s9fpdqv85u44evvjhpu46c9kbv": {
+        "sessionId": "s9fpdqv85u44evvjhpu46c9kbv",
+        "userId": "user-001",
+        "username": "admin@admin.com",
+        "role": "super_admin",
+        "ip": "::1",
+        "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/151.0.0.0 Sa",
+        "loginAt": "2026-08-30T06:27:00+02:00",
+        "lastActive": 1788064020
+    }
+}

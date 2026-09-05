@@ -1,0 +1,51 @@
+[
+    {
+        "id": "del-1787205546-240",
+        "deleteNo": "DEL-20260820-6557",
+        "invoiceId": "sale-1787205545-939",
+        "invoiceNo": "INV-20260820-0010",
+        "customerName": "Audit Test Customer Bilawal",
+        "customerPhone": "03451122334",
+        "invoiceTotal": 10300,
+        "paymentMethod": "easypaisa",
+        "originalCreatedAt": "2026-08-20T07:59:05+02:00",
+        "deletedBy": "admin@admin.com",
+        "deleteReason": "Erroneous cashier double test entry",
+        "restocked": true,
+        "restockedItems": [
+            {
+                "id": "acc-2",
+                "name": "True Wireless ANC Airbuds Pro",
+                "qty": 2
+            }
+        ],
+        "saleDataSnapshot": {
+            "id": "sale-1787205545-939",
+            "invoiceNo": "INV-20260820-0010",
+            "items": [
+                {
+                    "id": "acc-2",
+                    "name": "True Wireless ANC Airbuds Pro",
+                    "sellingPrice": 5200,
+                    "costPrice": 3900,
+                    "qty": 2,
+                    "lineTotal": 10400,
+                    "isService": false
+                }
+            ],
+            "subtotal": 10400,
+            "discount": 100,
+            "total": 10300,
+            "cost": 7800,
+            "profit": 2500,
+            "paymentMethod": "easypaisa",
+            "trxId": "",
+            "customerName": "Audit Test Customer Bilawal",
+            "customerPhone": "03451122334",
+            "status": "completed",
+            "cashier": "admin@admin.com",
+            "createdAt": "2026-08-20T07:59:05+02:00"
+        },
+        "deletedAt": "2026-08-20T07:59:06+02:00"
+    }
+]

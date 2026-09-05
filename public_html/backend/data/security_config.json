@@ -1,0 +1,8 @@
+{
+    "admin_secret_path": "secure-management-portal",
+    "session_timeout_minutes": 30,
+    "max_login_attempts": 5,
+    "lockout_duration_minutes": 15,
+    "emergency_lockdown": false,
+    "2fa_required_super_admin": false
+}
